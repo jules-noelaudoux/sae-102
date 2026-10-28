@@ -1,3 +1,6 @@
 DoubleBracket/.qtcreator/*
 RoundRobin/.qtcreator/*
 Suisse/.qtcreator/*
+
+build/
+*.pro.user
