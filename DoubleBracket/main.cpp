@@ -42,7 +42,7 @@ int litUnEntier (){
 struct participant {
     string nom;
     string prenom;
-    int score;
+    unsigned score;
 };
 
 bool compare2part (const participant & p1, const participant & p2){
