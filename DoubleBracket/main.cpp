@@ -4,8 +4,12 @@
  *  @Brief : une prmière réponse à la SAE 1.02 de 24/25
 **/
 #include <iostream>
+#include <string>
+#include <cstdlib>    // Requis pour rand()
+#include <ctime>
 #include <vector>
 #include <algorithm>
+#include <cctype>
 
 using namespace std;
 
@@ -71,7 +75,7 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
 
 participant manche (participant & p1, participant & p2){
     for (unsigned i (0); i < 3; ++i) {
-        if (p1 == pierreFeuilleCiseau(p1, p2))
+        if (p1.nom == pierreFeuilleCiseau.nom(p1, p2))
             ++p1.score;
         else
             ++p2.score;
