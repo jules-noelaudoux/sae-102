@@ -69,8 +69,17 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     cin >> entreeP1;
     cout << "Joueur2 : quel coup ? : ";
     cin>> entreeP2;
-    if (entreeP1 == "puit") return p1;
-    if ((entreeP1 == "Pierre") && (entreeP2 == "ciseau")) return p1;
+    if (entreP1 == entreP2){
+        cout << "égalité" << endl;
+        pierreFeuilleCiseau (const participant & p1, const participant & p2);
+    else if (entreeP1 == "puit") return p1;
+    else if (entreeP2 == "puit") return p2;
+    else if ((entreeP1 == "pierre") && (entreeP2 == "ciseau")) return p1;
+    else if ((entreeP1 == "pierre") && (entreeP2 == "feuille")) return p2;
+    else if ((entreP1 == "ciseau") && (entreP2 == "pierre")) return p2;
+    else if ((entreP1 == "ciseau") && (entreP2 == "feuille")) return p1;
+    else if ((entreP1 == "feuille") && (entreP2 == "pierre")) return p1;
+    else if ((entreP1 == "feuille") && (entreP2 == "ciseau")) return p1;
 }
 
 participant manche (participant & p1, participant & p2){
