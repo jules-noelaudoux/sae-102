@@ -69,17 +69,18 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     cin >> entreeP1;
     cout << "Joueur2 : quel coup ? : ";
     cin>> entreeP2;
-    if (entreP1 == entreP2){
+    if (entreeP1 == entreeP2){
         cout << "égalité" << endl;
-        pierreFeuilleCiseau (const participant & p1, const participant & p2);
+        pierreFeuilleCiseau (p1, p2);
+        }
     else if (entreeP1 == "puit") return p1;
     else if (entreeP2 == "puit") return p2;
     else if ((entreeP1 == "pierre") && (entreeP2 == "ciseau")) return p1;
     else if ((entreeP1 == "pierre") && (entreeP2 == "feuille")) return p2;
-    else if ((entreP1 == "ciseau") && (entreP2 == "pierre")) return p2;
-    else if ((entreP1 == "ciseau") && (entreP2 == "feuille")) return p1;
-    else if ((entreP1 == "feuille") && (entreP2 == "pierre")) return p1;
-    else if ((entreP1 == "feuille") && (entreP2 == "ciseau")) return p1;
+    else if ((entreeP1 == "ciseau") && (entreeP2 == "pierre")) return p2;
+    else if ((entreeP1 == "ciseau") && (entreeP2 == "feuille")) return p1;
+    else if ((entreeP1 == "feuille") && (entreeP2 == "pierre")) return p1;
+    else if ((entreeP1 == "feuille") && (entreeP2 == "ciseau")) return p1;
 }
 
 participant manche (participant & p1, participant & p2){
@@ -93,21 +94,32 @@ participant manche (participant & p1, participant & p2){
     return p2;
 }
 
-participant manche2 (participant & p1, participant & p2){   #retravailler
-    srand(time(0));
-    string choix;
-    cout << "Pile ou Face ?";
-    cin >> choix;
-    for (char &c : choix)
+participant pileOuFace (participant & p1, participant & p2){ 
+    string entreeP1, entreeP2;
+    cout << "Joueur 1 : Pile ou Face ?";
+    cin >> entreeP1;
+    cout << "Joueur 2 : Pile ou Face ?";
+    cin >> entreeP2;
+    for (char &c : entreeP1)
         c = tolower(c);
+    for (char &c : entreeP2)
+        c = tolower(c);
+    srand(time(0));
     int resultat = rand() % 2;
-    cout << (resultat == 0 ?"\nC'etait pile !" : "\nC'etait face !") << endl;
-    if((resultat == 0 && choix == "pile") || (resultat == 1 && choix == "face"))
-        cout << "Gagné !" << endl;
-    else
-        cout << " Perdu !" << endl;
-    if (p1.score>p2.score) return p1;
-    return p2;
+    cout << (resultat == 0 ? "\nC'etait pile !" : "\nC'etait face !") << endl;
+
+    if (entreeP1 == entreeP2) {
+        cout << "Egalite !" << endl;
+        return p1;
+    }
+    else if ((resultat == 0 && entreeP1 == "pile") || ((resultat == 1 && entreeP1 == "face")){
+        cout << "Joueur 1 a gagne !" <<endl;
+        return p1;
+    }
+    else {
+        cout << "Joueur 2 a gagne !" << endl;
+        return p2;
+    }
 }
 
 int main()
