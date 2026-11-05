@@ -63,6 +63,8 @@ void affichVectParticipants (const vector<participant> & vPart){
     }
 }
 
+// jeux 
+
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     string entreeP1, entreeP2;
     cout << "Joueur1 : quel coup ? : ";
@@ -119,6 +121,35 @@ participant pileOuFace (participant & p1, participant & p2){
     else {
         cout << "Joueur 2 a gagne !" << endl;
         return p2;
+    }
+}
+
+participant secretNumber (participant & p1, participant & p2){ 
+    int secret;
+    int guess;
+    unsigned cpt = 0;
+    
+    cout << "Joueur 1 : entre ton nombre : ";
+    cin >> secret;
+    cout << "Joueur 2 : devine le nombre : ";
+    cin >> guess;
+    ++cpt;
+    
+    while ((guess != secret) && (cpt < 5)){
+        if (guess < secret)
+            cout << "Le nombre secret est plus grand" << endl;
+        else
+            cout <<"Le nombre secret est plus petit" << endl;
+        cin >> guess;
+        ++ cpt;
+    }
+    if (guess == secret){
+    cout << "Bravo tu as trouvé le nombre secret en " << cpt << " tentatives" << endl;
+    return p2;
+    }
+    else {
+        cout << "Perdu" << endl;
+        return p1;
     }
 }
 
