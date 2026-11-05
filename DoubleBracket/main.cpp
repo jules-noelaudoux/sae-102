@@ -154,38 +154,5 @@ participant manche (participant & p1, participant & p2){
 
 int main()
 {
-    //cout << "Hello World!" << endl;
-    //vector<participant> vParticipant (19);
-    /* on va detecter les glaces preférées des votants
-    * tout en virant les commentaires
-    */
-
-    /* on vote sur 4 glaces */
-    vector <string> vGlacePref;
-    for (unsigned i (0); i < 4; ++i)
-        vGlacePref.push_back(litUneString());
-
-/* debug */
-    affichVectString (vGlacePref);
-
-    //On lit les datas du clavier, et on les stocke
-/*    vector<participant> vParticipant;
-
-    for (unsigned i (0); i < 10; ++i){
-        string nom (litUneString());
-        string prenom  (litUneString());
-        int numGlace (litUnEntier());
-        //cout << nom << endl << prenom << endl << numGlace << endl;
-        vParticipant.push_back(participant{nom, prenom, numGlace});
-              //  vJoueur[numEquipe-1].push_back(joueur {nom, prenom, numEquipe});
-    }
-
-    affichVectParticipants(vParticipant);
-    cout << string (15, '-') << endl;
-    sort (vParticipant.begin(), vParticipant.end(), compare2part);
-    affichVectParticipants(vParticipant);
-*/
-
-        cout << "c'est la glace " << vGlacePref[0] << " qui a gagne" << endl;
     return 0;
 }
