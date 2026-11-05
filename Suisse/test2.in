@@ -1,0 +1,151 @@
+# Test 2 : Tournoi 16 joueurs, 5 rondes avec egalites (systeme suisse)
+# Inscription des 16 participants
+Joueur:J01
+Joueur:J02
+Joueur:J03
+Joueur:J04
+Joueur:J05
+Joueur:J06
+Joueur:J07
+Joueur:J08
+Joueur:J09
+Joueur:J10
+Joueur:J11
+Joueur:J12
+Joueur:J13
+Joueur:J14
+Joueur:J15
+Joueur:J16
+# Actions avec rematches en cas de coup identique
+# Ronde 1 - Match 1
+Action:1
+Action:1
+# Egalite, on rejoue :
+Action:0
+Action:2
+# Ronde 1 - Match 2
+Action:0
+Action:1
+# Ronde 1 - Match 3
+Action:0
+Action:2
+# Ronde 1 - Match 4
+Action:0
+Action:1
+# Ronde 1 - Match 5
+Action:0
+Action:2
+# Ronde 1 - Match 6
+Action:1
+Action:1
+# Egalite, on rejoue :
+Action:0
+Action:1
+# Ronde 1 - Match 7
+Action:0
+Action:2
+# Ronde 1 - Match 8
+Action:0
+Action:1
+# Ronde 2 - Match 9
+Action:0
+Action:2
+# Ronde 2 - Match 10
+Action:0
+Action:1
+# Ronde 2 - Match 11
+Action:0
+Action:2
+# Ronde 2 - Match 12
+Action:0
+Action:1
+# Ronde 2 - Match 13
+Action:1
+Action:1
+# Egalite, on rejoue :
+Action:0
+Action:2
+# Ronde 2 - Match 14
+Action:0
+Action:1
+# Ronde 2 - Match 15
+Action:0
+Action:2
+# Ronde 2 - Match 16
+Action:0
+Action:1
+# Ronde 3 - Match 17
+Action:0
+Action:2
+# Ronde 3 - Match 18
+Action:0
+Action:1
+# Ronde 3 - Match 19
+Action:0
+Action:2
+# Ronde 3 - Match 20
+Action:0
+Action:1
+# Ronde 3 - Match 21
+Action:0
+Action:2
+# Ronde 3 - Match 22
+Action:0
+Action:1
+# Ronde 3 - Match 23
+Action:0
+Action:2
+# Ronde 3 - Match 24
+Action:0
+Action:1
+# Ronde 4 - Match 25
+Action:0
+Action:2
+# Ronde 4 - Match 26
+Action:1
+Action:1
+# Egalite, on rejoue :
+Action:0
+Action:1
+# Ronde 4 - Match 27
+Action:0
+Action:2
+# Ronde 4 - Match 28
+Action:0
+Action:1
+# Ronde 4 - Match 29
+Action:0
+Action:2
+# Ronde 4 - Match 30
+Action:0
+Action:1
+# Ronde 4 - Match 31
+Action:0
+Action:2
+# Ronde 4 - Match 32
+Action:0
+Action:1
+# Ronde 5 - Match 33
+Action:0
+Action:2
+# Ronde 5 - Match 34
+Action:0
+Action:1
+# Ronde 5 - Match 35
+Action:0
+Action:2
+# Ronde 5 - Match 36
+Action:0
+Action:1
+# Ronde 5 - Match 37
+Action:0
+Action:2
+# Ronde 5 - Match 38
+Action:0
+Action:1
+# Ronde 5 - Match 39
+Action:0
+Action:2
+# Ronde 5 - Match 40
+Action:0
+Action:1
