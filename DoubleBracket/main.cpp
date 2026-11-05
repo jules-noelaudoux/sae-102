@@ -64,92 +64,102 @@ void affichVectParticipants (const vector<participant> & vPart){
 
 // jeux 
 
+// 0: pierre, 1: feuille, 2: ciseaux
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
-    string entreeP1, entreeP2;
-    cout << "Joueur1 : quel coup ? : ";
-    cin >> entreeP1;
-    cout << "Joueur2 : quel coup ? : ";
-    cin>> entreeP2;
-    if (entreeP1 == entreeP2){
-        cout << "égalité" << endl;
-        return pierreFeuilleCiseau (p1, p2);
-        }
-    else if (entreeP1 == "puit") return p1;
-    else if (entreeP2 == "puit") return p2;
-    else if ((entreeP1 == "pierre") && (entreeP2 == "ciseau")) return p1;
-    else if ((entreeP1 == "pierre") && (entreeP2 == "feuille")) return p2;
-    else if ((entreeP1 == "ciseau") && (entreeP2 == "pierre")) return p2;
-    else if ((entreeP1 == "ciseau") && (entreeP2 == "feuille")) return p1;
-    else if ((entreeP1 == "feuille") && (entreeP2 == "pierre")) return p1;
-    else if ((entreeP1 == "feuille") && (entreeP2 == "ciseau")) return p2;
+    int coup1 = litUnEntier();
+    int coup2 = litUnEntier();
+
+    if (coup1 == coup2){
+        // match nul donc on rejoue
+        return pierreFeuilleCiseau(p1, p2);
+    }
+    // 0 bat 2, 1 bat 0, 2 bat 1
+    if ((coup1 == 0 && coup2 == 2) ||
+        (coup1 == 1 && coup2 == 0) ||
+        (coup1 == 2 && coup2 == 1)){
+        return p1;
+    }
+    return p2;
 }
+participant pileOuFace (const participant & p1, const participant & p2){
+    int choix1 = litUnEntier();
+    int choix2 = litUnEntier();
 
-participant pileOuFace (participant & p1, participant & p2){ 
-    string entreeP1, entreeP2;
-    cout << "Joueur 1 : Pile ou Face ?";
-    cin >> entreeP1;
-    cout << "Joueur 2 : Pile ou Face ?";
-    cin >> entreeP2;
-    for (char &c : entreeP1)
-        c = tolower(c);
-    for (char &c : entreeP2)
-        c = tolower(c);
-    srand(47);
+    if (choix1 == choix2){
+        // meme choix, on rejoue
+        return pileOuFace(p1, p2);
+    }
     int resultat = rand() % 2;
-    cout << (resultat == 0 ? "\nC'etait pile !" : "\nC'etait face !") << endl;
-
-    if (entreeP1 == entreeP2) {
-        cout << "Egalite !" << endl;
+    if (choix1 == resultat)
         return p1;
-    }
-    else if ((resultat == 0 && entreeP1 == "pile") || ((resultat == 1 && entreeP1 == "face"))){
-        cout << "Joueur 1 a gagne !" <<endl;
-        return p1;
-    }
-    else {
-        cout << "Joueur 2 a gagne !" << endl;
-        return p2;
-    }
+    return p2;
 }
 
 participant secretNumber (participant & p1, participant & p2){ 
-    int secret;
-    int guess;
-    unsigned cpt = 0;
-    
-    cout << "Joueur 1 : entre ton nombre : ";
-    cin >> secret;
-    cout << "Joueur 2 : devine le nombre : ";
-    cin >> guess;
-    ++cpt;
-    
-    while ((guess != secret) && (cpt < 5)){
-        if (guess < secret)
-            cout << "Le nombre secret est plus grand" << endl;
-        else
-            cout <<"Le nombre secret est plus petit" << endl;
-        cin >> guess;
-        ++ cpt;
-    }
-    if (guess == secret){
-    cout << "Bravo tu as trouvé le nombre secret en " << cpt << " tentatives" << endl;
-    return p2;
-    }
-    else {
-        cout << "Perdu" << endl;
-        return p1;
+}
+
+void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
+    for (unsigned i = 0; i < joueurs.size(); i +=2){
+        participant gagnant = pierreFeuilleCiseaux(joueurs[i], joueurs[i+1]);
+        if (gagnant.nom == joueurs[i].nom && gagnant.prenom == joueurs[i].prenom) {
+            gagnants.push_back(joueurs[i]);
+            perdants.push_back(joueurs[i+1]);
+        }
+        else {
+            gagnants.push_back(joueurs[i+1]);
+            perdants.push_back(joueurs[i]);
+        }
     }
 }
 
-participant manche (participant & p1, participant & p2){
-    for (unsigned i (0); i < 3; ++i) {
-        if (p1.nom == pierreFeuilleCiseau(p1, p2).nom)
-            ++p1.score;
-        else
-            ++p2.score;
+void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines){
+    for (unsigned i = 0; i < anciens.size(); ++i){
+        participant gagnant = pierreFeuilleCiseaux(anciens[i], nouveaux[i]);
+        if (gagnant.nom == anciens[i].nom && gagnant.prenom == anciens[i].prenom) {
+            gagnants.push_back(anciens[i]);
+            elimines.push_back(nouveaux[i]);
+        }
+        else {
+            gagnants.push_back(nouveaux[i]);
+            elimines.push_back(anciens[i]);
+        }
     }
-    if (p1.score>p2.score) return p1;
-    return p2;
+}
+
+void tournoiDoubleBracket(vector<participant> & vPart){ // a reprendre
+    vector<participant> tableauGagnants = vPart;
+    vector<participant> tableauPerdants;
+    vector<vector<participant>> eliminesParTour; // tableau qui contient plusieurs tableaux afin de conserver les joueurs éliminés à chaque tour séparement
+
+    while (taleauGagnants.size() > 1){
+        vector<participant> nouveauxGagnants;
+        vector<participant> nouveauxPerdants;
+
+        vector<participant> vide;
+        jouerMatchs(tableauGagnants, vide, nouveauxGagnants, nouveauxPerdants);
+        tableauGagnants = nouveauxGagnants;
+
+        vector<participant> survivants;
+        vector<participant> elimines;
+
+        if (tableauPerdants.empty()){
+            jouerMatchs(nouveauxPerdants, vide, survivants, elimines);
+            eliminesparTour.push_back(elimines);
+        }
+        else if (tableauPerdants.size() == nouveauxPerdants.size()){
+            jouerMatchs(tableauPerdants, nouveauxPerdants, survivants, elimines);
+            eliminesparTour.push_back(elimines);
+        }
+        else {
+            vector<participant> survivantsIntermediaires;
+            jouerMatchs(tableauPerdants, vide, survivantsIntermediaires, elimines);
+            eliminesparTour.push_back(elimines);
+            elimines.clear();
+            jouerMatchs(survivantsIntermediaires, nouveauxPerdants, survivants, elimines);
+            eliminesparTour.push_back(elimines);
+        }
+        tableauPerdants = survivants;
+    }
 }
 
 int main()
