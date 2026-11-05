@@ -95,7 +95,19 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-participant secretNumber (participant & p1, participant & p2){ 
+// Jeu 3 : Secret Number (p1 choisit le nb, p2 tente de deviner en 5 essais max)
+participant secretNumber (const participant & p1, const participant & p2){
+    int secret = litUnEntier();
+    int guess = litUnEntier();
+    unsigned cpt (1);
+
+    while ((guess != secret) && (cpt < 5)){
+        guess = litUnEntier();
+        ++cpt;
+    }
+    if (guess == secret)
+        return p2;
+    return p1;
 }
 
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
