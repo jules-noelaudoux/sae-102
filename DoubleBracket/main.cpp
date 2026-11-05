@@ -21,21 +21,20 @@ using namespace std;
  * le commentaire est matérialisé par la chaine "//"
  */
 
+
 string litUneString (){
     string uneChaine;
     while (true){
         getline (cin, uneChaine);
-        if ((!cin) || (uneChaine.substr(0,2) != "//")) break;
+        if (!cin || (uneChaine != "" && uneChaine[0] != '#')) break;
     }
     return uneChaine;
 }
 
 int litUnEntier (){
-    string uneChaine;
-    while (true){
-        getline (cin, uneChaine);
-        if ((!cin) || (uneChaine.substr(0,2) != "//")) break;
-    }
+    string uneChaine = litUneString();
+    if (uneChaine.size() >= 7 && uneChaine.substr(0, 7) == "Action:")
+        return stoi(uneChaine.substr(7));
     return stoi(uneChaine);
 }
 
@@ -83,17 +82,6 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     else if ((entreeP1 == "ciseau") && (entreeP2 == "feuille")) return p1;
     else if ((entreeP1 == "feuille") && (entreeP2 == "pierre")) return p1;
     else if ((entreeP1 == "feuille") && (entreeP2 == "ciseau")) return p2;
-}
-
-participant manche (participant & p1, participant & p2){
-    for (unsigned i (0); i < 3; ++i) {
-        if (p1.nom == pierreFeuilleCiseau(p1, p2).nom)
-            ++p1.score;
-        else
-            ++p2.score;
-    }
-    if (p1.score>p2.score) return p1;
-    return p2;
 }
 
 participant pileOuFace (participant & p1, participant & p2){ 
@@ -151,6 +139,17 @@ participant secretNumber (participant & p1, participant & p2){
         cout << "Perdu" << endl;
         return p1;
     }
+}
+
+participant manche (participant & p1, participant & p2){
+    for (unsigned i (0); i < 3; ++i) {
+        if (p1.nom == pierreFeuilleCiseau(p1, p2).nom)
+            ++p1.score;
+        else
+            ++p2.score;
+    }
+    if (p1.score>p2.score) return p1;
+    return p2;
 }
 
 int main()
