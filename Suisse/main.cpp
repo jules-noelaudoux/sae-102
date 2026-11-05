@@ -2,6 +2,7 @@
 #include <string>
 #include <vector>
 #include <algorithm>
+#include <cstdlib>
 
 using namespace std;
 
@@ -47,7 +48,7 @@ void affichVectParticipants (const vector<participant> & vPart){
     }
 }
 
-// 0: pierre, 1: feuille, 2: ciseaux
+// Jeu 1 : PFC (0: pierre, 1: feuille, 2: ciseaux)
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
@@ -65,12 +66,64 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     return p2;
 }
 
+// Jeu 2 : Pile ou Face (0: pile, 1: face)
+participant pileOuFace (const participant & p1, const participant & p2){
+    int choix1 = litUnEntier();
+    int choix2 = litUnEntier();
+
+    if (choix1 == choix2){
+        // meme choix, on rejoue
+        return pileOuFace(p1, p2);
+    }
+    int resultat = rand() % 2;
+    if (choix1 == resultat)
+        return p1;
+    return p2;
+}
+
+// Jeu 3 : Secret Number (p1 choisit le nb, p2 tente de deviner en 5 essais max)
+participant secretNumber (const participant & p1, const participant & p2){
+    int secret = litUnEntier();
+    int guess = litUnEntier();
+    unsigned cpt (1);
+
+    while ((guess != secret) && (cpt < 5)){
+        guess = litUnEntier();
+        ++cpt;
+    }
+    if (guess == secret)
+        return p2;
+    return p1;
+}
+
+// Chaque manche fait jouer les 3 jeux aux deux joueurs, je suis pas sur que c'est ca
 void jouerMatch (participant & p1, participant & p2){
-    participant gagnant = pierreFeuilleCiseau(p1, p2);
-    if (gagnant.nom == p1.nom)
-        p1.score = p1.score + 1;
+    unsigned v1 (0);
+    unsigned v2 (0);
+
+    // Jeu 1 : PFC
+    if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
+        v1++;
     else
-        p2.score = p2.score + 1;
+        v2++;
+
+    // Jeu 2 : Pile ou Face
+    if (pileOuFace(p1, p2).nom == p1.nom)
+        v1++;
+    else
+        v2++;
+
+    // Jeu 3 : Secret Number
+    if (secretNumber(p1, p2).nom == p1.nom)
+        v1++;
+    else
+        v2++;
+
+    // Le gagnant du match gagne 1 point au tournoi
+    if (v1 > v2)
+        p1.score++;
+    else
+        p2.score++;
 }
 
 bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string> & historique){
@@ -100,11 +153,14 @@ void tournoiSuisse (vector<participant> & vPart){
     vector<string> historique;
 
     for (unsigned r (0); r < KNbRondes; ++r){
-        // on retrie par score decroissant avant chaque ronde
+        // on trie par score decroissant avant chaque ronde
         sort(vPart.begin(), vPart.end(), compare2part);
+
         vector<bool> apparie(vPart.size(), false);
+
         for (unsigned i (0); i < vPart.size(); ++i){
             if (apparie[i]) continue;
+
             unsigned adv = vPart.size();
             // on cherche le joueur le plus proche en score pas encore affronte
             for (unsigned j (i + 1); j < vPart.size(); ++j){
@@ -122,6 +178,7 @@ void tournoiSuisse (vector<participant> & vPart){
                     }
                 }
             }
+
             if (adv < vPart.size()){
                 apparie[i] = true;
                 apparie[adv] = true;
@@ -136,6 +193,8 @@ void tournoiSuisse (vector<participant> & vPart){
 }
 
 int main (){
+    srand(47);
+
     vector<participant> vParticipants = lireParticipants();
 
     tournoiSuisse(vParticipants);

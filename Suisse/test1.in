@@ -1,5 +1,5 @@
-# Test 1 : Tournoi classique 16 joueurs, 5 rondes (systeme suisse)
-# Inscription des 16 joueurs
+# Test 1 : Tournoi classique 16 joueurs, 5 rondes (3 jeux par match)
+# Inscription des 16 participants
 Joueur:J01
 Joueur:J02
 Joueur:J03
@@ -16,124 +16,508 @@ Joueur:J13
 Joueur:J14
 Joueur:J15
 Joueur:J16
-# Debut des actions (40 matchs * 2 actions = 80 actions)
+# Debut des actions des 40 matchs
 # Ronde 1 - Match 1
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 1 - Match 2
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 1 - Match 3
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 1 - Match 4
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 1 - Match 5
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 1 - Match 6
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 1 - Match 7
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 1 - Match 8
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 9
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 10
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 2 - Match 11
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 12
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 13
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 2 - Match 14
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 15
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 2 - Match 16
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 3 - Match 17
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 3 - Match 18
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 3 - Match 19
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 3 - Match 20
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 3 - Match 21
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 3 - Match 22
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 3 - Match 23
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 3 - Match 24
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 4 - Match 25
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 4 - Match 26
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 4 - Match 27
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 4 - Match 28
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 4 - Match 29
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 4 - Match 30
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 4 - Match 31
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 4 - Match 32
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 5 - Match 33
+# PFC
+Action:0
+Action:2
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 5 - Match 34
+# PFC
+Action:1
 Action:0
-Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 5 - Match 35
-Action:1
+# PFC
 Action:0
+Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 5 - Match 36
+# PFC
+Action:1
+Action:0
+# Pile/Face
 Action:0
 Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 5 - Match 37
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
 # Ronde 5 - Match 38
+# PFC
 Action:1
 Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
 # Ronde 5 - Match 39
-Action:0
-Action:1
-# Ronde 5 - Match 40
+# PFC
 Action:0
 Action:2
+# Pile/Face
+Action:0
+Action:1
+# Secret Number
+Action:42
+Action:10
+Action:11
+Action:12
+Action:13
+Action:14
+# Ronde 5 - Match 40
+# PFC
+Action:1
+Action:0
+# Pile/Face
+Action:0
+Action:1
+# Secret Number (trouve du 1er coup)
+Action:42
+Action:42
