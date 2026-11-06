@@ -81,12 +81,11 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-participant secretnumber (const participant & p1, const participant & p2){
+participant NombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
     max = 20;
     secret = rand() % (max-min) + min;
-    cout << secret;
     int guess1 = litUnEntier();
     int guess2= litUnEntier();
 
@@ -95,10 +94,74 @@ participant secretnumber (const participant & p1, const participant & p2){
         guess2= litUnEntier();
     }
     
-    if (guess1 == guess2){return (secretnumber(p1, p2));}
+    if (guess1 == guess2){return (NombreSecret(p1, p2));}
     
     else{
         if (guess1 == secret){return (p1);}
         return p2;
     }
+}
+
+void jouerMatch (participant & p1, participant & p2){
+    unsigned v1 (0);
+    unsigned v2 (0);
+
+    // Jeu 1 : PFC
+    if (pierreFeuilleCiseau(p1, p2).nom == p1.nom) {v1++;}
+    else {v2++;}
+
+    // Jeu 2 : Pile ou Face
+    if (pileOuFace(p1, p2).nom == p1.nom) {v1++;}
+    else{v2++;}
+
+    // On fait jouer le 3eme jeu uniquement si aucun des deux joueurs n'a déjà gagné les 2 premiers.
+    if (v1 == 1 && v2 == 1){
+        // Jeu 3 : Nombre Secret
+        if (NombreSecret(p1, p2).nom == p1.nom){v1++;}
+        else{v2++;}
+
+        // Le gagnant du match gagne 1 point au tournoi
+        if (v1 > v2){p1.score++;}
+        else{p2.score++;}
+    }
+    else{
+        if (v1 == 2){p1.score++;}
+        else{p2.score++;}
+    }
+    
+}
+
+vector<participant> lireParticipants (){
+    const unsigned KNbJoueurs (8);
+    vector<participant> v;
+    for (unsigned i (0); i < KNbJoueurs; ++i){
+        string ligne = litUneString();
+        if (ligne.size() >= 7 && ligne.substr(0, 7) == "Joueur:")
+            ligne = ligne.substr(7);
+        v.push_back(participant{ligne, "", 0});
+    }
+    return v;
+}
+
+void tournoiRoundRobin (vector<participant> & vPart){
+    for (unsigned i=0; i < vPart.size(); i++){
+        for (unsigned j (i + 1); j < vPart.size(); j++){
+            jouerMatch(vPart[i], vPart[j]);
+        }
+    }
+    sort(vPart.begin(), vPart.end(), compare2part);
+}
+
+int main (){
+    srand(47);
+
+    vector<participant> vParticipants = lireParticipants();
+
+    tournoiRoundRobin(vParticipants);
+
+    for (unsigned i (0); i < vParticipants.size(); ++i){
+        cout << (i + 1) << ":" << vParticipants[i].nom << endl;
+    }
+
+    return 0;
 }
