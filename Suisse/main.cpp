@@ -101,21 +101,21 @@ void jouerMatch (participant & p1, participant & p2){
     // 1pt par jeu
     // Jeu 1 : PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
-        p1++;
+        p1.score++;
     else
-        p2++;
+        p2.score++;
 
     // Jeu 2 : Pile ou Face
     if (pileOuFace(p1, p2).nom == p1.nom)
-        p1++;
+        p1.score++;
     else
-        p2++;
+        p2.score++;
 
     // Jeu 3 : Secret Number
     if (secretNumber(p1, p2).nom == p1.nom)
-        p1++;
+        p1.score++;
     else
-        p2++;
+        p2.score++;
 }
 
 bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string> & historique){
