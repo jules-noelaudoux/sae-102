@@ -57,13 +57,13 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
         // match nul donc on rejoue
         return pierreFeuilleCiseau(p1, p2);
     }
-    // 0 bat 2, 1 bat 0, 2 bat 1
+    // coups
     if ((coup1 == 0 && coup2 == 2) ||
         (coup1 == 1 && coup2 == 0) ||
         (coup1 == 2 && coup2 == 1)){
         return p1;
     }
-    return p2;
+    return p2; // on retourne le gagnant
 }
 
 // Jeu 2 : Pile ou Face (0: pile, 1: face)
@@ -72,7 +72,7 @@ participant pileOuFace (const participant & p1, const participant & p2){
     int choix2 = litUnEntier();
 
     if (choix1 == choix2){
-        // meme choix, on rejoue
+        // on rejoue si meme choix
         return pileOuFace(p1, p2);
     }
     int resultat = rand() % 2;
@@ -136,7 +136,7 @@ bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string>
 }
 
 vector<participant> lireParticipants (){
-    const unsigned KNbJoueurs (16);
+    const unsigned KNbJoueurs (16); // On initialise le nombre de joueurs
     vector<participant> v;
     for (unsigned i (0); i < KNbJoueurs; ++i){
         string ligne = litUneString();
