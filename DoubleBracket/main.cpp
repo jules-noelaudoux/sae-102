@@ -73,20 +73,20 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
         // match nul donc on rejoue
         return pierreFeuilleCiseau(p1, p2);
     }
-    // 0 bat 2, 1 bat 0, 2 bat 1
+    // coups
     if ((coup1 == 0 && coup2 == 2) ||
         (coup1 == 1 && coup2 == 0) ||
         (coup1 == 2 && coup2 == 1)){
         return p1;
     }
-    return p2;
+    return p2; // on retourne le gagnant
 }
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
     int choix2 = litUnEntier();
 
     if (choix1 == choix2){
-        // meme choix, on rejoue
+        // on rejoue si meme choix
         return pileOuFace(p1, p2);
     }
     int resultat = rand() % 2;
@@ -134,7 +134,7 @@ participant jouerMatch (const participant & p1, const participant & p2){
     else
         v2++;
 
-    // Jeu 3 : uniquement si 1-1
+    // Jeu 3 : seulement si egalite
     if (v1 == 1 && v2 == 1){
         if (NombreSecret(p1, p2).nom == p1.nom)
             v1++;
@@ -221,7 +221,7 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
     return gagnant;
 }
 
-const unsigned KNbJoueurs (64);
+const unsigned KNbJoueurs (64); // On initialise le nombre de joueurs
 
 vector<participant> lireParticipants (){
     vector<participant> v;
