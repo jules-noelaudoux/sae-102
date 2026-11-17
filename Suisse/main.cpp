@@ -98,32 +98,24 @@ participant secretNumber (const participant & p1, const participant & p2){
 
 // Chaque manche fait jouer les 3 jeux aux deux joueurs, je suis pas sur que c'est ca
 void jouerMatch (participant & p1, participant & p2){
-    unsigned v1 (0);
-    unsigned v2 (0);
-
+    // 1pt par jeu
     // Jeu 1 : PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
-        v1++;
+        p1++;
     else
-        v2++;
+        p2++;
 
     // Jeu 2 : Pile ou Face
     if (pileOuFace(p1, p2).nom == p1.nom)
-        v1++;
+        p1++;
     else
-        v2++;
+        p2++;
 
     // Jeu 3 : Secret Number
     if (secretNumber(p1, p2).nom == p1.nom)
-        v1++;
+        p1++;
     else
-        v2++;
-
-    // Le gagnant du match gagne 1 point au tournoi
-    if (v1 > v2)
-        p1.score++;
-    else
-        p2.score++;
+        p2++;
 }
 
 bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string> & historique){
