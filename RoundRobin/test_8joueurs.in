@@ -1,4 +1,4 @@
-# Inscription des 8 joueurs
+#Inscription des 8 joueurs
 Joueur:Alice
 Joueur:Bob
 Joueur:Chloe
@@ -8,7 +8,7 @@ Joueur:Farid
 Joueur:Gaelle
 Joueur:Hugo
 
-# Match 1 : Alice - Bob (1-1 puis jeu 3)
+#Match 1: Alice contre Bob (1 partout puis jeu 3)
 Action:1
 Action:1
 Action:2
@@ -26,13 +26,13 @@ Action:11
 Action:3
 Action:15
 
-# Match 2 : Alice - Chloe (2-0)
+#Match 2: Alice contre Chloe (2-0)
 Action:2
 Action:1
 Action:1
 Action:0
 
-# Match 3 : Alice - David (1-1 puis jeu 3)
+#Match 3: Alice contre David (1 partout puis jeu 3)
 Action:1
 Action:0
 Action:0
@@ -50,13 +50,13 @@ Action:0
 Action:9
 Action:4
 
-# Match 4 : Alice - Emma (2-0)
+#Match 4: Alice contre Emma (2-0)
 Action:0
 Action:2
 Action:0
 Action:1
 
-# Match 5 : Alice - Farid (2-0)
+#Match 5: Alice contre Farid (2-0)
 Action:2
 Action:0
 Action:0
@@ -64,7 +64,7 @@ Action:0
 Action:1
 Action:0
 
-# Match 6 : Alice - Gaelle (2-0)
+#Match 6: Alice contre Gaelle (2-0)
 Action:0
 Action:2
 Action:0
@@ -72,13 +72,13 @@ Action:0
 Action:1
 Action:0
 
-# Match 7 : Alice - Hugo (2-0)
+#Match 7: Alice contre Hugo (2-0)
 Action:0
 Action:2
 Action:1
 Action:0
 
-# Match 8 : Bob - Chloe (1-1 puis jeu 3)
+#Match 8: Bob contre Chloe (1 partout puis jeu 3)
 Action:1
 Action:1
 Action:1
@@ -88,7 +88,7 @@ Action:1
 Action:1
 Action:16
 
-# Match 9 : Bob - David (2-0)
+#Match 9: Bob contre David (2-0)
 Action:1
 Action:1
 Action:0
@@ -96,7 +96,7 @@ Action:1
 Action:1
 Action:0
 
-# Match 10 : Bob - Emma (2-0)
+#Match 10: Bob contre Emma (2-0)
 Action:0
 Action:1
 Action:1
@@ -104,7 +104,7 @@ Action:1
 Action:0
 Action:1
 
-# Match 11 : Bob - Farid (2-0)
+#Match 11: Bob contre Farid (2-0)
 Action:1
 Action:1
 Action:2
@@ -112,7 +112,7 @@ Action:1
 Action:1
 Action:0
 
-# Match 12 : Bob - Gaelle (1-1 puis jeu 3)
+#Match 12: Bob contre Gaelle (1 partout puis jeu 3)
 Action:2
 Action:2
 Action:0
@@ -122,7 +122,7 @@ Action:1
 Action:3
 Action:6
 
-# Match 13 : Bob - Hugo (1-1 puis jeu 3)
+#Match 13: Bob contre Hugo (1 partout puis jeu 3)
 Action:0
 Action:1
 Action:0
@@ -130,7 +130,7 @@ Action:1
 Action:13
 Action:18
 
-# Match 14 : Chloe - David (1-1 puis jeu 3)
+#Match 14: Chloe contre David (1 partout puis jeu 3)
 Action:0
 Action:1
 Action:0
@@ -146,7 +146,7 @@ Action:1
 Action:17
 Action:4
 
-# Match 15 : Chloe - Emma (1-1 puis jeu 3)
+#Match 15: Chloe contre Emma (1 partout puis jeu 3)
 Action:1
 Action:1
 Action:0
@@ -166,13 +166,13 @@ Action:0
 Action:6
 Action:12
 
-# Match 16 : Chloe - Farid (2-0)
+#Match 16: Chloe contre Farid (2-0)
 Action:0
 Action:2
 Action:1
 Action:0
 
-# Match 17 : Chloe - Gaelle (1-1 puis jeu 3)
+#Match 17: Chloe contre Gaelle (1 partout puis jeu 3)
 Action:1
 Action:1
 Action:2
@@ -184,7 +184,7 @@ Action:2
 Action:16
 Action:6
 
-# Match 18 : Chloe - Hugo (1-1 puis jeu 3)
+#Match 18: Chloe contre Hugo (1 partout puis jeu 3)
 Action:2
 Action:2
 Action:1
@@ -196,7 +196,7 @@ Action:15
 Action:8
 Action:1
 
-# Match 19 : David - Emma (1-1 puis jeu 3)
+#Match 19: David contre Emma (1 partout puis jeu 3)
 Action:2
 Action:1
 Action:1
@@ -208,25 +208,25 @@ Action:0
 Action:3
 Action:16
 
-# Match 20 : David - Farid (2-0)
+#Match 20: David contre Farid (2-0)
 Action:1
 Action:2
 Action:1
 Action:0
 
-# Match 21 : David - Gaelle (2-0)
+#Match 21: David contre Gaelle (2-0)
 Action:1
 Action:2
 Action:0
 Action:1
 
-# Match 22 : David - Hugo (2-0)
+#Match 22: David contre Hugo (2-0)
 Action:2
 Action:1
 Action:0
 Action:1
 
-# Match 23 : Emma - Farid (1-1 puis jeu 3)
+#Match 23: Emma contre Farid (1 partout puis jeu 3)
 Action:0
 Action:0
 Action:2
@@ -266,7 +266,7 @@ Action:12
 Action:17
 Action:13
 
-# Match 24 : Emma - Gaelle (1-1 puis jeu 3)
+#Match 24: Emma contre Gaelle (1 partout puis jeu 3)
 Action:1
 Action:1
 Action:1
@@ -278,13 +278,13 @@ Action:1
 Action:18
 Action:1
 
-# Match 25 : Emma - Hugo (2-0)
+#Match 25: Emma contre Hugo (2-0)
 Action:0
 Action:1
 Action:0
 Action:1
 
-# Match 26 : Farid - Gaelle (1-1 puis jeu 3)
+#Match 26: Farid contre Gaelle (1 partout puis jeu 3)
 Action:2
 Action:1
 Action:0
@@ -292,7 +292,7 @@ Action:1
 Action:14
 Action:11
 
-# Match 27 : Farid - Hugo (2-0)
+#Match 27: Farid contre Hugo (2-0)
 Action:2
 Action:1
 Action:1
@@ -308,7 +308,7 @@ Action:1
 Action:0
 Action:1
 
-# Match 28 : Gaelle - Hugo (1-1 puis jeu 3)
+#Match 28: Gaelle contre Hugo (1 partout puis jeu 3)
 Action:0
 Action:0
 Action:1
