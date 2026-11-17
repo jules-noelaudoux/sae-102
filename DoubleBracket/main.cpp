@@ -109,10 +109,17 @@ participant secretNumber (const participant & p1, const participant & p2){
         return p2;
     return p1;
 }
-
+participant jeu(const participant & joueur1, const participant & joueur2, int numeroJeu){
+    if (numeroJeu == 1)
+        return pierreFeuilleCiseaux(joueur1, joueur2);
+    else if (numeroJeu == 2)
+        return pileOuFace(joueur1, joueur2);
+    if (numeroJeu == 3)
+        return secretNumber(joueur1, joueur2);
+}
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
     for (unsigned i = 0; i < joueurs.size(); i +=2){
-        participant gagnant = pierreFeuilleCiseaux(joueurs[i], joueurs[i+1]);
+        participant gagnant = jeu(joueurs[i], joueurs[i+1],numeroJeu);
         if (gagnant.nom == joueurs[i].nom && gagnant.prenom == joueurs[i].prenom) {
             gagnants.push_back(joueurs[i]);
             perdants.push_back(joueurs[i+1]);
@@ -126,7 +133,7 @@ void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gag
 
 void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines){
     for (unsigned i = 0; i < anciens.size(); ++i){
-        participant gagnant = pierreFeuilleCiseaux(anciens[i], nouveaux[i]);
+        participant gagnant = jeu(anciens[i], nouveaux[i]);
         if (gagnant.nom == anciens[i].nom && gagnant.prenom == anciens[i].prenom) {
             gagnants.push_back(anciens[i]);
             elimines.push_back(nouveaux[i]);
@@ -138,7 +145,7 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
     }
 }
 
-void tournoiDoubleBracket(vector<participant> & vPart){ // a reprendre
+void tournoiDoubleBracket(vector<participant> & joueurs, int numeroJeu){ 
     vector<participant> tableauGagnants = vPart;
     vector<participant> tableauPerdants;
     vector<vector<participant>> eliminesParTour; // tableau qui contient plusieurs tableaux afin de conserver les joueurs éliminés à chaque tour séparement
