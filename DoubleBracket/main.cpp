@@ -109,17 +109,18 @@ participant secretNumber (const participant & p1, const participant & p2){
         return p2;
     return p1;
 }
-participant jeu(const participant & joueur1, const participant & joueur2, int numeroJeu){
+participant jouerJeu(const participant & joueur1, const participant & joueur2, int numeroJeu){
     if (numeroJeu == 1)
         return pierreFeuilleCiseaux(joueur1, joueur2);
     else if (numeroJeu == 2)
         return pileOuFace(joueur1, joueur2);
-    if (numeroJeu == 3)
+    else if (numeroJeu == 3)
         return secretNumber(joueur1, joueur2);
+    return joueur1;
 }
-void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
+void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants, int numeroJeu){
     for (unsigned i = 0; i < joueurs.size(); i +=2){
-        participant gagnant = jeu(joueurs[i], joueurs[i+1],numeroJeu);
+        participant gagnant = jouerJeu(joueurs[i], joueurs[i+1],numeroJeu);
         if (gagnant.nom == joueurs[i].nom && gagnant.prenom == joueurs[i].prenom) {
             gagnants.push_back(joueurs[i]);
             perdants.push_back(joueurs[i+1]);
@@ -131,9 +132,9 @@ void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gag
     }
 }
 
-void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines){
+void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines,int numeroJeu){
     for (unsigned i = 0; i < anciens.size(); ++i){
-        participant gagnant = jeu(anciens[i], nouveaux[i]);
+        participant gagnant = jouerJeu(anciens[i], nouveaux[i], numeroJeu);
         if (gagnant.nom == anciens[i].nom && gagnant.prenom == anciens[i].prenom) {
             gagnants.push_back(anciens[i]);
             elimines.push_back(nouveaux[i]);
@@ -145,43 +146,48 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
     }
 }
 
-void tournoiDoubleBracket(vector<participant> & joueurs, int numeroJeu){ 
-    vector<participant> tableauGagnants = vPart;
+participant tournoiDoubleBracket(vector<participant> & joueurs, int numeroJeu){ 
+    vector<participant> tableauGagnants = joueurs;
     vector<participant> tableauPerdants;
-    vector<vector<participant>> eliminesParTour; // tableau qui contient plusieurs tableaux afin de conserver les joueurs éliminés à chaque tour séparement
 
-    while (taleauGagnants.size() > 1){
+    while (tableauGagnants.size() > 1){
         vector<participant> nouveauxGagnants;
         vector<participant> nouveauxPerdants;
-
-        vector<participant> vide;
-        jouerMatchs(tableauGagnants, vide, nouveauxGagnants, nouveauxPerdants);
+        // Matchs du Winner Bracket
+        jouerMatchs(tableauGagnants, nouveauxGagnants, nouveauxPerdants, numeroJeu);
         tableauGagnants = nouveauxGagnants;
 
         vector<participant> survivants;
         vector<participant> elimines;
 
         if (tableauPerdants.empty()){
-            jouerMatchs(nouveauxPerdants, vide, survivants, elimines);
-            eliminesparTour.push_back(elimines);
+            jouerMatchs(nouveauxPerdants, survivants, elimines, numeroJeu);
         }
-        else if (tableauPerdants.size() == nouveauxPerdants.size()){
-            jouerMatchs(tableauPerdants, nouveauxPerdants, survivants, elimines);
-            eliminesparTour.push_back(elimines);
-        }
-        else {
+        while (tableauPerdants.size() > nouveauxPerdants.size()) {
             vector<participant> survivantsIntermediaires;
-            jouerMatchs(tableauPerdants, vide, survivantsIntermediaires, elimines);
-            eliminesparTour.push_back(elimines);
-            elimines.clear();
-            jouerMatchs(survivantsIntermediaires, nouveauxPerdants, survivants, elimines);
-            eliminesparTour.push_back(elimines);
+            vector<participant> eliminesIntermediaires;
+            jouerMatchs(tableauPerdants, survivantsIntermediaires, eliminesIntermediaires, numeroJeu);
+            tableauPerdants = survivantsIntermediaires;
         }
-        tableauPerdants = survivants;
+        jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines, numeroJeu);
     }
+    // Grande finale
+    participant gagnant = jouerJeu(tableauGagnants[0],tableauPerdants[0], numeroJeu);
+    //Si le champion du Looser Bracket gagne, on rejoue une finale
+    if(gagnant.nom == tableauPerdants[0].nom && gagnant.prenom == tableauPerdants[0].prenom( 
+        gagnant = jouerJeu(tableauGagnants[0],tableauPerdants[0], numeroJeu);
+        
+    return gagnant;
 }
 
 int main()
 {
+    participant vainqueur1 = tournoiDoubleBracket(joueurs,1);
+    participant vainqueur2 = tournoiDoubleBracket(joueurs,2);
+    if (vainqueur1.nom == vainqueur2.nom && vainqueur1.prenom == vainqueur2.prenom)
+            return vainqueur1.nom + " " + vainqueur1.prenom
+    else {
+            participant vainqueur3 = tournoiDoubleBracket(joueurs,3);
+    }
     return 0;
 }
