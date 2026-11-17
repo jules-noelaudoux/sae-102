@@ -514,9 +514,9 @@ Action:1
 Action:5
 Action:12
 
-#===========================================
+
 #TOUR 2 (Winner Bracket: 32 joueurs)
-#===========================================
+
 
 #Match 49 (WB T2): Alix vs Benjamin
 #Jeu 1: PFC
@@ -819,10 +819,7 @@ Action:1
 Action:3
 Action:10
 
-#===========================================
 #TOUR 3 (Winner Bracket: 16 joueurs)
-#===========================================
-
 #Match 81 (WB T3): Benjamin vs Celia
 #Jeu 1: PFC
 Action:0
@@ -1063,10 +1060,7 @@ Action:1
 Action:15
 Action:2
 
-#===========================================
 #TOUR 4 (Winner Bracket: 8 joueurs)
-#===========================================
-
 #Match 105 (WB T4): Celia vs Heloise
 #Jeu 1: PFC
 Action:0
@@ -1184,10 +1178,7 @@ Action:2
 Action:0
 Action:1
 
-#===========================================
 #TOUR 5 (Winner Bracket: 4 joueurs)
-#===========================================
-
 #Match 117 (WB T5): Heloise vs Marc
 #Jeu 1: PFC
 Action:0
@@ -1245,10 +1236,7 @@ Action:2
 Action:0
 Action:1
 
-#===========================================
 #TOUR 6 (Winner Bracket: 2 joueurs)
-#===========================================
-
 #Match 123 (WB T6): Marc vs Valentine
 #Jeu 1: PFC
 Action:0
@@ -1279,10 +1267,7 @@ Action:2
 Action:0
 Action:1
 
-#===========================================
 #GRANDE FINALE
-#===========================================
-
 #Match 126 (Grande Finale): Valentine vs Marc
 #Jeu 1: PFC
 Action:0
@@ -1293,4 +1278,3 @@ Action:1
 #Jeu 3: Nombre Secret (car 1 partout)
 Action:0
 Action:7
-
