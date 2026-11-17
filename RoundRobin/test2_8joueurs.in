@@ -1,0 +1,274 @@
+# Test 2 Round Robin - 8 participants (tous contre tous)
+# Inscription des 8 joueurs
+Joueur:Lucas
+Joueur:Manon
+Joueur:Nathan
+Joueur:Olivia
+Joueur:Pierre
+Joueur:Quentin
+Joueur:Romane
+Joueur:Simon
+
+# Match 1 : Lucas contre Manon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:11
+Action:17
+
+# Match 2 : Lucas contre Nathan
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 3 : Lucas contre Olivia
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 4 : Lucas contre Pierre
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:10
+Action:4
+
+# Match 5 : Lucas contre Quentin
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:16
+Action:2
+
+# Match 6 : Lucas contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 7 : Lucas contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 8 : Manon contre Nathan
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 9 : Manon contre Olivia
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 10 : Manon contre Pierre
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:7
+Action:1
+
+# Match 11 : Manon contre Quentin
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 12 : Manon contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 13 : Manon contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 14 : Nathan contre Olivia
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:4
+Action:18
+
+# Match 15 : Nathan contre Pierre
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:6
+Action:12
+
+# Match 16 : Nathan contre Quentin
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 17 : Nathan contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:12
+Action:18
+
+# Match 18 : Nathan contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 19 : Olivia contre Pierre
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 20 : Olivia contre Quentin
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:7
+Action:1
+
+# Match 21 : Olivia contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:0
+Action:6
+
+# Match 22 : Olivia contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 23 : Pierre contre Quentin
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:3
+Action:9
+
+# Match 24 : Pierre contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:10
+Action:4
+
+# Match 25 : Pierre contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:10
+Action:16
+
+# Match 26 : Quentin contre Romane
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1 aux deux premiers jeux)
+Action:0
+Action:14
+
+# Match 27 : Quentin contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 28 : Romane contre Simon
+# Jeu 1 : Pierre Feuille Ciseaux
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
