@@ -66,1245 +66,1233 @@ Joueur:Zack
 Joueur:Zinedine
 
 # ===========================================
-# TOUR 1 (Winner Bracket restant: 64)
+# TOUR 1 (Winner Bracket : 64 joueurs)
 # ===========================================
 
-# Match 1 (WB Tour 1) : Aaron vs Alix
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 1 (WB T1) : Aaron vs Alix
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:11
-Action:19
-
-# Match 2 (WB Tour 1) : Baptiste vs Benjamin
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 3 (WB Tour 1) : Cedric vs Celia
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 4 (WB Tour 1) : Damien vs Dorian
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:4
-Action:12
-
-# Match 5 (WB Tour 1) : Elise vs Eloise
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:16
-Action:4
-
-# Match 6 (WB Tour 1) : Fabien vs Fanny
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 7 (WB Tour 1) : Gaspard vs Geoffrey
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 8 (WB Tour 1) : Hadrien vs Heloise
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 9 (WB Tour 1) : Ilan vs Ismael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 10 (WB Tour 1) : Jean vs Jeremy
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:1
-Action:9
-
-# Match 11 (WB Tour 1) : Kylian vs Laetitia
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 12 (WB Tour 1) : Laurent vs Lena
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 13 (WB Tour 1) : Loic vs Loris
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 14 (WB Tour 1) : Marc vs Mathys
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:18
-Action:6
+Action:11
 
-# Match 15 (WB Tour 1) : Melvin vs Mickael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 2 (WB T1) : Baptiste vs Benjamin
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:14
-Action:6
+Action:1
 
-# Match 16 (WB Tour 1) : Morgane vs Noe
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 3 (WB T1) : Cedric vs Celia
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
+Action:1
 
-# Match 17 (WB Tour 1) : Noemie vs Octave
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 4 (WB T1) : Damien vs Dorian
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:12
-Action:0
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:4
+Action:11
 
-# Match 18 (WB Tour 1) : Pauline vs Remi
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 5 (WB T1) : Elise vs Eloise
+# Jeu 1 : PFC
+Action:1
 Action:2
-# Pile ou Face (0: pile, 1: face)
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-
-# Match 19 (WB Tour 1) : Robin vs Salome
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 20 (WB Tour 1) : Samir vs Sasha
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:1
-Action:9
-
-# Match 21 (WB Tour 1) : Sylvain vs Tanguy
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:8
-Action:0
-
-# Match 22 (WB Tour 1) : Thibault vs Timothee
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 23 (WB Tour 1) : Tristan vs Ugo
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:3
-Action:11
-
-# Match 24 (WB Tour 1) : Valentine vs Victoire
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:12
-Action:4
-
-# Match 25 (WB Tour 1) : Warren vs Wassil
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:10
-Action:18
-
-# Match 26 (WB Tour 1) : Xavier vs Yann
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:14
-Action:2
-
-# Match 27 (WB Tour 1) : Yannick vs Ylan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 28 (WB Tour 1) : Yoan vs Youssef
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 29 (WB Tour 1) : Yuna vs Yuri
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 30 (WB Tour 1) : Yvan vs Yves
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 31 (WB Tour 1) : Yvon vs Zachary
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 32 (WB Tour 1) : Zack vs Zinedine
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:12
-Action:0
-
-# Match 33 (LB initial Tour 1) : Alix vs Benjamin
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 34 (LB initial Tour 1) : Celia vs Dorian
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 35 (LB initial Tour 1) : Eloise vs Fanny
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 36 (LB initial Tour 1) : Geoffrey vs Heloise
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 37 (LB initial Tour 1) : Ismael vs Jeremy
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:5
-Action:13
-
-# Match 38 (LB initial Tour 1) : Laetitia vs Lena
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:0
-Action:8
-
-# Match 39 (LB initial Tour 1) : Loris vs Mathys
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 40 (LB initial Tour 1) : Melvin vs Noe
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 41 (LB initial Tour 1) : Octave vs Remi
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 42 (LB initial Tour 1) : Salome vs Sasha
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 43 (LB initial Tour 1) : Sylvain vs Timothee
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:8
 Action:16
 
-# Match 44 (LB initial Tour 1) : Ugo vs Valentine
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 6 (WB T1) : Fabien vs Fanny
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:15
-Action:3
-
-# Match 45 (LB initial Tour 1) : Wassil vs Yann
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:9
 Action:1
 
-# Match 46 (LB initial Tour 1) : Ylan vs Youssef
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 7 (WB T1) : Gaspard vs Geoffrey
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:6
-Action:14
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
 
-# Match 47 (LB initial Tour 1) : Yuri vs Yves
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 8 (WB T1) : Hadrien vs Heloise
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
+Action:1
 
-# Match 48 (LB initial Tour 1) : Zachary vs Zinedine
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 9 (WB T1) : Ilan vs Ismael
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:13
+Action:1
+
+# Match 10 (WB T1) : Jean vs Jeremy
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:1
+Action:8
+
+# Match 11 (WB T1) : Kylian vs Laetitia
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 12 (WB T1) : Laurent vs Lena
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 13 (WB T1) : Loic vs Loris
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 14 (WB T1) : Marc vs Mathys
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:18
 Action:5
 
-# ===========================================
-# TOUR 2 (Winner Bracket restant: 32)
-# ===========================================
-
-# Match 49 (WB Tour 2) : Aaron vs Baptiste
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 15 (WB T1) : Melvin vs Mickael
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-
-# Match 50 (WB Tour 2) : Cedric vs Damien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:12
-Action:0
-
-# Match 51 (WB Tour 2) : Elise vs Fabien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 52 (WB Tour 2) : Gaspard vs Hadrien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 53 (WB Tour 2) : Ilan vs Jean
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:1
-Action:9
-
-# Match 54 (WB Tour 2) : Kylian vs Laurent
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 55 (WB Tour 2) : Loic vs Marc
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 56 (WB Tour 2) : Mickael vs Morgane
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 57 (WB Tour 2) : Noemie vs Pauline
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:18
-Action:10
-
-# Match 58 (WB Tour 2) : Robin vs Samir
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 59 (WB Tour 2) : Tanguy vs Thibault
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:18
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:13
 Action:6
 
-# Match 60 (WB Tour 2) : Tristan vs Victoire
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 16 (WB T1) : Morgane vs Noe
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
 
-# Match 61 (WB Tour 2) : Warren vs Xavier
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 17 (WB T1) : Noemie vs Octave
+# Jeu 1 : PFC
 Action:1
-Action:0
-
-# Match 62 (WB Tour 2) : Yannick vs Yoan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
 Action:2
-# Pile ou Face (0: pile, 1: face)
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-
-# Match 63 (WB Tour 2) : Yuna vs Yvan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:13
-Action:5
-
-# Match 64 (WB Tour 2) : Yvon vs Zack
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 65 (LB croisés Tour 2) : Alix vs Baptiste
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:3
-Action:11
-
-# Match 66 (LB croisés Tour 2) : Celia vs Damien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 67 (LB croisés Tour 2) : Eloise vs Fabien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 68 (LB croisés Tour 2) : Geoffrey vs Hadrien
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:19
+Action:12
+
+# Match 18 (WB T1) : Pauline vs Remi
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 19 (WB T1) : Robin vs Salome
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 20 (WB T1) : Samir vs Sasha
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:1
+Action:8
+
+# Match 21 (WB T1) : Sylvain vs Tanguy
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:7
-
-# Match 69 (LB croisés Tour 2) : Ismael vs Jean
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
 
-# Match 70 (LB croisés Tour 2) : Laetitia vs Laurent
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 22 (WB T1) : Thibault vs Timothee
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:15
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 23 (WB T1) : Tristan vs Ugo
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:10
 Action:3
 
-# Match 71 (LB croisés Tour 2) : Loris vs Marc
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 24 (WB T1) : Valentine vs Victoire
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:9
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:4
+Action:11
+
+# Match 25 (WB T1) : Warren vs Wassil
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:17
+Action:10
 
-# Match 72 (LB croisés Tour 2) : Melvin vs Morgane
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 26 (WB T1) : Xavier vs Yann
+# Jeu 1 : PFC
 Action:1
-Action:0
-
-# Match 73 (LB croisés Tour 2) : Octave vs Noemie
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
 Action:2
-# Pile ou Face (0: pile, 1: face)
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-
-# Match 74 (LB croisés Tour 2) : Salome vs Samir
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:14
-Action:2
-
-# Match 75 (LB croisés Tour 2) : Sylvain vs Thibault
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
-Action:0
 
-# Match 76 (LB croisés Tour 2) : Ugo vs Victoire
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 27 (WB T1) : Yannick vs Ylan
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:4
+Action:1
+
+# Match 28 (WB T1) : Yoan vs Youssef
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 29 (WB T1) : Yuna vs Yuri
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 30 (WB T1) : Yvan vs Yves
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 31 (WB T1) : Yvon vs Zachary
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 32 (WB T1) : Zack vs Zinedine
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:12
-
-# Match 77 (LB croisés Tour 2) : Yann vs Xavier
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:13
-Action:1
-
-# Match 78 (LB croisés Tour 2) : Ylan vs Yoan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:10
-Action:2
-
-# Match 79 (LB croisés Tour 2) : Yuri vs Yuna
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:10
-Action:18
-
-# Match 80 (LB croisés Tour 2) : Zinedine vs Zack
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:3
-Action:11
-
-# ===========================================
-# TOUR 3 (Winner Bracket restant: 16)
-# ===========================================
-
-# Match 81 (WB Tour 3) : Aaron vs Cedric
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:9
-Action:1
-
-# Match 82 (WB Tour 3) : Elise vs Gaspard
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 83 (WB Tour 3) : Ilan vs Kylian
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 84 (WB Tour 3) : Loic vs Mickael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:4
-Action:16
-
-# Match 85 (WB Tour 3) : Pauline vs Robin
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:7
-Action:15
-
-# Match 86 (WB Tour 3) : Tanguy vs Tristan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 87 (WB Tour 3) : Warren vs Yannick
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:6
-Action:18
-
-# Match 88 (WB Tour 3) : Yvan vs Yvon
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:2
-Action:10
-
-# Match 89 (LB repêchage Tour 3) : Alix vs Celia
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:11
 Action:19
 
-# Match 90 (LB repêchage Tour 3) : Eloise vs Geoffrey
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 33 (LB initial T1) : Aaron vs Baptiste
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:15
-Action:7
+Action:1
 
-# Match 91 (LB repêchage Tour 3) : Ismael vs Laetitia
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 34 (LB initial T1) : Cedric vs Dorian
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
-# Nombre Secret (egalite 1-1)
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 35 (LB initial T1) : Elise vs Fabien
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 36 (LB initial T1) : Gaspard vs Hadrien
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 37 (LB initial T1) : Ilan vs Jeremy
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:12
-Action:0
-
-# Match 92 (LB repêchage Tour 3) : Loris vs Melvin
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:7
-Action:15
-
-# Match 93 (LB repêchage Tour 3) : Octave vs Salome
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:6
-Action:18
-
-# Match 94 (LB repêchage Tour 3) : Sylvain vs Ugo
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 95 (LB repêchage Tour 3) : Yann vs Yoan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 96 (LB repêchage Tour 3) : Yuri vs Zinedine
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:13
 Action:5
 
-# Match 97 (LB croisés Tour 3) : Alix vs Aaron
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 38 (LB initial T1) : Kylian vs Laurent
+# Jeu 1 : PFC
 Action:1
-Action:0
-
-# Match 98 (LB croisés Tour 3) : Geoffrey vs Gaspard
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
 Action:2
-# Pile ou Face (0: pile, 1: face)
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:0
-
-# Match 99 (LB croisés Tour 3) : Ismael vs Kylian
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 100 (LB croisés Tour 3) : Loris vs Loic
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:19
 Action:7
 
-# Match 101 (LB croisés Tour 3) : Salome vs Robin
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 39 (LB initial T1) : Loic vs Mathys
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:0
-Action:8
+Action:1
 
-# Match 102 (LB croisés Tour 3) : Sylvain vs Tristan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 40 (LB initial T1) : Melvin vs Morgane
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:8
-Action:0
 
-# Match 103 (LB croisés Tour 3) : Yann vs Warren
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 41 (LB initial T1) : Noemie vs Pauline
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:16
-Action:4
+Action:1
 
-# Match 104 (LB croisés Tour 3) : Zinedine vs Yvon
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 42 (LB initial T1) : Robin vs Sasha
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
+Action:1
+
+# Match 43 (LB initial T1) : Sylvain vs Thibault
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:15
-Action:3
+Action:8
 
-# ===========================================
-# TOUR 4 (Winner Bracket restant: 8)
-# ===========================================
-
-# Match 105 (WB Tour 4) : Cedric vs Elise
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 44 (LB initial T1) : Tristan vs Victoire
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:15
+Action:2
+
+# Match 45 (LB initial T1) : Warren vs Yann
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:8
+Action:1
+
+# Match 46 (LB initial T1) : Yannick vs Yoan
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:6
+Action:13
+
+# Match 47 (LB initial T1) : Yuna vs Yvan
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 48 (LB initial T1) : Yvon vs Zinedine
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
+Action:12
+
+# ===========================================
+# TOUR 2 (Winner Bracket : 32 joueurs)
+# ===========================================
+
+# Match 49 (WB T2) : Alix vs Benjamin
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 50 (WB T2) : Celia vs Damien
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:12
+Action:19
+
+# Match 51 (WB T2) : Eloise vs Fanny
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 52 (WB T2) : Geoffrey vs Heloise
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 53 (WB T2) : Ismael vs Jean
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:8
+Action:1
+
+# Match 54 (WB T2) : Laetitia vs Lena
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 55 (WB T2) : Loris vs Marc
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 56 (WB T2) : Mickael vs Noe
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 57 (WB T2) : Octave vs Remi
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:17
+Action:10
+
+# Match 58 (WB T2) : Salome vs Samir
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 59 (WB T2) : Tanguy vs Timothee
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
 Action:18
 
-# Match 106 (WB Tour 4) : Ilan vs Mickael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 60 (WB T2) : Ugo vs Valentine
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
+Action:1
 
-# Match 107 (WB Tour 4) : Pauline vs Tanguy
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 61 (WB T2) : Wassil vs Xavier
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
 
-# Match 108 (WB Tour 4) : Yannick vs Yvan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 62 (WB T2) : Ylan vs Youssef
+# Jeu 1 : PFC
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
 Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 63 (WB T2) : Yuri vs Yves
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:12
+Action:5
+
+# Match 64 (WB T2) : Zachary vs Zack
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 65 (LB croises T2) : Baptiste vs Alix
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:10
+Action:3
+
+# Match 66 (LB croises T2) : Dorian vs Damien
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 67 (LB croises T2) : Fabien vs Eloise
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 68 (LB croises T2) : Hadrien vs Geoffrey
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:19
+Action:6
+
+# Match 69 (LB croises T2) : Jeremy vs Ismael
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 70 (LB croises T2) : Kylian vs Laetitia
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:15
+Action:2
+
+# Match 71 (LB croises T2) : Mathys vs Loris
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:16
+Action:9
+
+# Match 72 (LB croises T2) : Morgane vs Mickael
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 73 (LB croises T2) : Pauline vs Octave
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 74 (LB croises T2) : Sasha vs Salome
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:14
+Action:1
+
+# Match 75 (LB croises T2) : Thibault vs Tanguy
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 76 (LB croises T2) : Tristan vs Ugo
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:4
+Action:11
+
+# Match 77 (LB croises T2) : Yann vs Wassil
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:0
+Action:13
+
+# Match 78 (LB croises T2) : Yannick vs Ylan
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:2
+Action:9
+
+# Match 79 (LB croises T2) : Yvan vs Yuri
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:17
+Action:10
+
+# Match 80 (LB croises T2) : Yvon vs Zachary
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:3
+Action:10
+
+# ===========================================
+# TOUR 3 (Winner Bracket : 16 joueurs)
+# ===========================================
+
+# Match 81 (WB T3) : Benjamin vs Celia
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:8
+Action:1
+
+# Match 82 (WB T3) : Fanny vs Heloise
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 83 (WB T3) : Jean vs Lena
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 84 (WB T3) : Marc vs Noe
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:16
+Action:3
+
+# Match 85 (WB T3) : Remi vs Samir
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:14
+Action:7
+
+# Match 86 (WB T3) : Timothee vs Valentine
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 87 (WB T3) : Xavier vs Youssef
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
+Action:18
+
+# Match 88 (WB T3) : Yves vs Zack
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:2
+Action:9
+
+# Match 89 (LB repechage T3) : Alix vs Damien
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:18
+Action:11
+
+# Match 90 (LB repechage T3) : Eloise vs Hadrien
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:7
 Action:14
 
-# Match 109 (LB repêchage Tour 4) : Alix vs Geoffrey
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 91 (LB repechage T3) : Ismael vs Kylian
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-
-# Match 110 (LB repêchage Tour 4) : Ismael vs Loris
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:12
-Action:0
-
-# Match 111 (LB repêchage Tour 4) : Salome vs Tristan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-
-# Match 112 (LB repêchage Tour 4) : Yann vs Zinedine
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:11
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:19
+Action:12
 
-# Match 113 (LB croisés Tour 4) : Alix vs Cedric
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 92 (LB repechage T3) : Loris vs Mickael
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:8
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:7
+Action:14
+
+# Match 93 (LB repechage T3) : Octave vs Sasha
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
+Action:18
+
+# Match 94 (LB repechage T3) : Tanguy vs Tristan
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 95 (LB repechage T3) : Wassil vs Yannick
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 96 (LB repechage T3) : Yuri vs Yvon
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
+Action:12
+
+# Match 97 (LB croises T3) : Damien vs Benjamin
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 98 (LB croises T3) : Eloise vs Fanny
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 99 (LB croises T3) : Kylian vs Jean
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 100 (LB croises T3) : Loris vs Noe
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:19
+Action:6
+
+# Match 101 (LB croises T3) : Sasha vs Remi
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:7
+Action:0
+
+# Match 102 (LB croises T3) : Tristan vs Timothee
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:0
+Action:7
+
+# Match 103 (LB croises T3) : Yannick vs Xavier
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:3
 Action:16
 
-# Match 114 (LB croisés Tour 4) : Ismael vs Mickael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 104 (LB croises T3) : Yuri vs Zack
+# Jeu 1 : PFC
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:11
-Action:3
-
-# Match 115 (LB croisés Tour 4) : Salome vs Tanguy
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:7
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:15
-
-# Match 116 (LB croisés Tour 4) : Yann vs Yannick
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
 
 # ===========================================
-# TOUR 5 (Winner Bracket restant: 4)
+# TOUR 4 (Winner Bracket : 8 joueurs)
 # ===========================================
 
-# Match 117 (WB Tour 5) : Elise vs Ilan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 105 (WB T4) : Celia vs Heloise
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:5
+Action:18
 
-# Match 118 (WB Tour 5) : Pauline vs Yvan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 106 (WB T4) : Lena vs Marc
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:9
-Action:17
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
 
-# Match 119 (LB repêchage Tour 5) : Alix vs Mickael
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 107 (WB T4) : Samir vs Valentine
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
+Action:1
+
+# Match 108 (WB T4) : Youssef vs Yves
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:14
-Action:2
-
-# Match 120 (LB repêchage Tour 5) : Salome vs Yann
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
-Action:0
 
-# Match 121 (LB croisés Tour 5) : Alix vs Ilan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 109 (LB repechage T4) : Benjamin vs Fanny
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:15
-Action:3
 
-# Match 122 (LB croisés Tour 5) : Salome vs Yvan
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
+# Match 110 (LB repechage T4) : Jean vs Loris
+# Jeu 1 : PFC
+Action:1
 Action:2
-# Pile ou Face (0: pile, 1: face)
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:12
+Action:19
 
-# ===========================================
-# TOUR 6 (Winner Bracket restant: 2)
-# ===========================================
-
-# Match 123 (WB Tour 6) : Elise vs Pauline
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 111 (LB repechage T4) : Remi vs Tristan
+# Jeu 1 : PFC
 Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 112 (LB repechage T4) : Xavier vs Yuri
+# Jeu 1 : PFC
 Action:2
-# Pile ou Face (0: pile, 1: face)
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
 Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:3
-Action:15
-
-# Match 124 (LB repêchage Tour 6) : Alix vs Salome
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
-Action:1
-Action:0
-# Nombre Secret (egalite 1-1)
-Action:3
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:11
+Action:18
 
-# Match 125 (LB croisés Tour 6) : Alix vs Elise
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
+# Match 113 (LB croises T4) : Fanny vs Celia
+# Jeu 1 : PFC
 Action:1
+Action:2
+# Jeu 2 : Pile ou Face
 Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:15
+Action:8
+
+# Match 114 (LB croises T4) : Jean vs Lena
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:3
+Action:10
+
+# Match 115 (LB croises T4) : Tristan vs Samir
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:14
+Action:7
+
+# Match 116 (LB croises T4) : Xavier vs Yves
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# ===========================================
+# TOUR 5 (Winner Bracket : 4 joueurs)
+# ===========================================
+
+# Match 117 (WB T5) : Heloise vs Marc
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 118 (WB T5) : Valentine vs Youssef
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:9
+Action:16
+
+# Match 119 (LB repechage T5) : Celia vs Jean
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:1
+Action:14
+
+# Match 120 (LB repechage T5) : Samir vs Yves
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# Match 121 (LB croises T5) : Jean vs Heloise
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:2
+Action:15
+
+# Match 122 (LB croises T5) : Yves vs Youssef
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+
+# ===========================================
+# TOUR 6 (Winner Bracket : 2 joueurs)
+# ===========================================
+
+# Match 123 (WB T6) : Marc vs Valentine
+# Jeu 1 : PFC
+Action:0
+Action:1
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:2
+Action:15
+
+# Match 124 (LB repechage T6) : Heloise vs Youssef
+# Jeu 1 : PFC
+Action:2
+Action:0
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
+Action:3
+Action:10
+
+# Match 125 (LB croises T6) : Heloise vs Marc
+# Jeu 1 : PFC
+Action:1
+Action:2
+# Jeu 2 : Pile ou Face
+Action:0
+Action:1
 
 # ===========================================
 # GRANDE FINALE
 # ===========================================
 
-# Match 126 (Grande Finale) : Pauline vs Alix
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
+# Match 126 (Grande Finale) : Valentine vs Marc
+# Jeu 1 : PFC
 Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 2 : Pile ou Face
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:8
-Action:0
-
-# Bracket reset (victoire du challenger du LB)
-# Match 127 (Grande Finale - Reset) : Pauline vs Alix
-# PFC (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:2
-# Pile ou Face (0: pile, 1: face)
 Action:1
+# Jeu 3 : Nombre Secret (car 1-1)
 Action:0
-# Nombre Secret (egalite 1-1)
-Action:14
-Action:2
+Action:7
 
