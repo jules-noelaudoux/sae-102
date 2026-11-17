@@ -133,6 +133,10 @@ void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gag
 }
 
 void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines,int numeroJeu){
+    if (anciens.size() != nouveaux.size()) {
+    cout << "Erreur : les deux tableaux n'ont pas la meme taille." << endl;
+    return;
+    }
     for (unsigned i = 0; i < anciens.size(); ++i){
         participant gagnant = jouerJeu(anciens[i], nouveaux[i], numeroJeu);
         if (gagnant.nom == anciens[i].nom && gagnant.prenom == anciens[i].prenom) {
@@ -163,18 +167,27 @@ participant tournoiDoubleBracket(vector<participant> & joueurs, int numeroJeu){
         if (tableauPerdants.empty()){
             jouerMatchs(nouveauxPerdants, survivants, elimines, numeroJeu);
         }
-        while (tableauPerdants.size() > nouveauxPerdants.size()) {
-            vector<participant> survivantsIntermediaires;
-            vector<participant> eliminesIntermediaires;
-            jouerMatchs(tableauPerdants, survivantsIntermediaires, eliminesIntermediaires, numeroJeu);
-            tableauPerdants = survivantsIntermediaires;
+        else {
+            while (tableauPerdants.size() > nouveauxPerdants.size()) {
+                vector<participant> survivantsIntermediaires;
+                vector<participant> eliminesIntermediaires;
+                jouerMatchs(tableauPerdants, survivantsIntermediaires, eliminesIntermediaires, numeroJeu);
+                tableauPerdants = survivantsIntermediaires;
+            }
+            if(tableauPerdants.size() < nouveauxPerdants.size()){
+                cout << "Erreur: effectifs incorrects dans le Loser Bracket" << endl;
+                return joueurs[0];
+            }
+            if(tableauPerdants.size() == nouveauxPerdants.size()){
+                jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines, numeroJeu);
+            }
         }
-        jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines, numeroJeu);
+        tableauPerdants = survivants;
     }
     // Grande finale
     participant gagnant = jouerJeu(tableauGagnants[0],tableauPerdants[0], numeroJeu);
     //Si le champion du Looser Bracket gagne, on rejoue une finale
-    if(gagnant.nom == tableauPerdants[0].nom && gagnant.prenom == tableauPerdants[0].prenom( 
+    if(gagnant.nom == tableauPerdants[0].nom && gagnant.prenom == tableauPerdants[0].prenom)
         gagnant = jouerJeu(tableauGagnants[0],tableauPerdants[0], numeroJeu);
         
     return gagnant;
@@ -185,9 +198,16 @@ int main()
     participant vainqueur1 = tournoiDoubleBracket(joueurs,1);
     participant vainqueur2 = tournoiDoubleBracket(joueurs,2);
     if (vainqueur1.nom == vainqueur2.nom && vainqueur1.prenom == vainqueur2.prenom)
-            return vainqueur1.nom + " " + vainqueur1.prenom
+            cout << vainqueur1.nom << " " << vainqueur1.prenom << endl;
     else {
             participant vainqueur3 = tournoiDoubleBracket(joueurs,3);
+        
+            if (vainqueur3.nom == vainqueur1.nom && vainqueur3.prenom == vainqueur1.prenom)
+                cout << vainqueur1.nom << " " << vainqueur1.prenom << endl;
+            else if (vainqueur3.nom == vainqueur2.nom && vainqueur3.prenom == vainqueur2.prenom)
+                    cout << vainqueur2.nom << " " << vainqueur2.prenom << endl;
+            else 
+                cout << "Egalite" << endl;
     }
     return 0;
 }
