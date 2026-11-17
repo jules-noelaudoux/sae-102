@@ -1,523 +1,518 @@
-# Test 1 : Tournoi classique 16 joueurs, 5 rondes (3 jeux par match)
-# Inscription des 16 participants
-Joueur:J01
-Joueur:J02
-Joueur:J03
-Joueur:J04
-Joueur:J05
-Joueur:J06
-Joueur:J07
-Joueur:J08
-Joueur:J09
-Joueur:J10
-Joueur:J11
-Joueur:J12
-Joueur:J13
-Joueur:J14
-Joueur:J15
-Joueur:J16
-# Debut des actions des 40 matchs
-# Ronde 1 - Match 1
-# PFC
-Action:0
+# Inscription des 16 joueurs du tournoi suisse
+Joueur:Alice
+Joueur:Bob
+Joueur:Chloe
+Joueur:David
+Joueur:Emma
+Joueur:Farid
+Joueur:Gaelle
+Joueur:Hugo
+Joueur:Ines
+Joueur:Jules
+Joueur:Karim
+Joueur:Lea
+Joueur:Maxime
+Joueur:Nina
+Joueur:Oscar
+Joueur:Paul
+
+# ==================================
+# Ronde 1 sur 5
+# ==================================
+
+# Match 1 : Alice contre Bob
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 1 - Match 2
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 1 - Match 3
-# PFC
-Action:0
+# Nombre Secret (entre 0 et 19)
+Action:18
 Action:2
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
 Action:11
-Action:12
+Action:15
+
+# Match 2 : Chloe contre David
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:0
 Action:13
-Action:14
-# Ronde 1 - Match 4
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 1 - Match 5
-# PFC
-Action:0
+
+# Match 3 : Emma contre Farid
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
+# Nombre Secret (entre 0 et 19)
 Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 1 - Match 6
-# PFC
+Action:15
+Action:4
+Action:8
+
+# Match 4 : Gaelle contre Hugo
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 1 - Match 7
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 1 - Match 8
-# PFC
-Action:1
-Action:0
-# Pile/Face
+# Nombre Secret (entre 0 et 19)
+Action:3
+Action:16
+
+# Match 5 : Ines contre Jules
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
 Action:12
-Action:13
-Action:14
-# Ronde 2 - Match 9
-# PFC
-Action:0
+Action:16
+Action:5
+Action:9
+
+# Match 6 : Karim contre Lea
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 2 - Match 10
-# PFC
+# Nombre Secret (entre 0 et 19)
+Action:8
 Action:1
-Action:0
-# Pile/Face
-Action:0
+
+# Match 7 : Maxime contre Nina
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 2 - Match 11
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
+# Nombre Secret (entre 0 et 19)
+Action:8
 Action:12
-Action:13
-Action:14
-# Ronde 2 - Match 12
-# PFC
 Action:1
-Action:0
-# Pile/Face
+Action:5
+
+# Match 8 : Oscar contre Paul
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 2 - Match 13
-# PFC
+# Pile ou Face (0: pile, 1: face)
 Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:6
+Action:19
+
+# ==================================
+# Ronde 2 sur 5
+# ==================================
+
+# Match 9 : David contre Lea
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 2 - Match 14
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
+# Nombre Secret (entre 0 et 19)
+Action:9
 Action:13
-Action:14
-# Ronde 2 - Match 15
-# PFC
-Action:0
 Action:2
-# Pile/Face
-Action:0
+Action:6
+
+# Match 10 : Paul contre Alice
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 2 - Match 16
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 3 - Match 17
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 3 - Match 18
-# PFC
-Action:1
-Action:0
-# Pile/Face
+# Nombre Secret (entre 0 et 19)
+Action:15
+Action:8
+
+# Match 11 : Emma contre Hugo
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 3 - Match 19
-# PFC
+# Pile ou Face (0: pile, 1: face)
 Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:4
+Action:8
+Action:17
+Action:1
+
+# Match 12 : Jules contre Maxime
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 3 - Match 20
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
+# Nombre Secret (entre 0 et 19)
+Action:19
 Action:12
-Action:13
-Action:14
-# Ronde 3 - Match 21
-# PFC
-Action:0
+
+# Match 13 : Bob contre Farid
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
+# Nombre Secret (entre 0 et 19)
 Action:14
-# Ronde 3 - Match 22
-# PFC
+Action:18
+Action:7
+Action:11
+
+# Match 14 : Gaelle contre Ines
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
 Action:1
-Action:0
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 3 - Match 23
-# PFC
-Action:0
+# Nombre Secret (entre 0 et 19)
+Action:8
+Action:1
+
+# Match 15 : Nina contre Chloe
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
+# Nombre Secret (entre 0 et 19)
+Action:7
 Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 3 - Match 24
-# PFC
+Action:0
+Action:4
+
+# Match 16 : Karim contre Oscar
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 4 - Match 25
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 4 - Match 26
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
+# Nombre Secret (entre 0 et 19)
+Action:17
 Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 4 - Match 27
-# PFC
+
+# ==================================
+# Ronde 3 sur 5
+# ==================================
+
+# Match 17 : Lea contre Alice
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:13
+Action:17
+Action:6
+Action:10
+
+# Match 18 : David contre Emma
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
+# Nombre Secret (entre 0 et 19)
 Action:13
-Action:14
-# Ronde 4 - Match 28
-# PFC
+Action:6
+
+# Match 19 : Maxime contre Paul
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 4 - Match 29
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 4 - Match 30
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 4 - Match 31
-# PFC
-Action:0
+# Nombre Secret (entre 0 et 19)
+Action:5
+Action:9
+Action:18
 Action:2
-# Pile/Face
+
+# Match 20 : Farid contre Hugo
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 4 - Match 32
-# PFC
-Action:1
-Action:0
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 5 - Match 33
-# PFC
-Action:0
+# Nombre Secret (entre 0 et 19)
+Action:4
+Action:17
+
+# Match 21 : Ines contre Nina
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
+# Nombre Secret (entre 0 et 19)
+Action:8
 Action:12
-Action:13
-Action:14
-# Ronde 5 - Match 34
-# PFC
 Action:1
-Action:0
-# Pile/Face
-Action:0
+Action:5
+
+# Match 22 : Jules contre Oscar
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 5 - Match 35
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
+# Nombre Secret (entre 0 et 19)
+Action:16
+Action:9
+
+# Match 23 : Bob contre Gaelle
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:19
+Action:3
 Action:12
-Action:13
-Action:14
-# Ronde 5 - Match 36
-# PFC
-Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 5 - Match 37
-# PFC
-Action:0
+Action:16
+
+# Match 24 : Chloe contre Karim
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-# Pile/Face
+Action:0
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
-# Ronde 5 - Match 38
-# PFC
+# Nombre Secret (entre 0 et 19)
+Action:16
+Action:9
+
+# ==================================
+# Ronde 4 sur 5
+# ==================================
+
+# Match 25 : Alice contre Emma
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-Action:0
-# Pile/Face
-Action:0
-Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
-Action:14
-# Ronde 5 - Match 39
-# PFC
-Action:0
 Action:2
-# Pile/Face
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number
-Action:42
-Action:10
-Action:11
-Action:12
-Action:13
+# Nombre Secret (entre 0 et 19)
 Action:14
-# Ronde 5 - Match 40
-# PFC
-Action:1
+Action:18
+Action:7
+Action:11
+
+# Match 26 : Lea contre Maxime
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
-# Pile/Face
+Action:1
+# Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-# Secret Number (trouve du 1er coup)
-Action:42
-Action:42
+# Nombre Secret (entre 0 et 19)
+Action:12
+Action:5
+
+# Match 27 : Oscar contre David
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+Action:0
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:7
+Action:11
+Action:0
+Action:4
+
+# Match 28 : Hugo contre Nina
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:2
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:6
+Action:19
+
+# Match 29 : Paul contre Bob
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:12
+Action:16
+Action:5
+Action:9
+
+# Match 30 : Farid contre Ines
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+Action:0
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:15
+Action:8
+
+# Match 31 : Gaelle contre Jules
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:2
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:2
+Action:6
+Action:15
+Action:19
+
+# Match 32 : Karim contre Chloe
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:8
+Action:1
+
+# ==================================
+# Ronde 5 sur 5
+# ==================================
+
+# Match 33 : Emma contre Maxime
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+Action:0
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:13
+Action:17
+Action:6
+Action:10
+
+# Match 34 : Nina contre Oscar
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:2
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:11
+Action:4
+
+# Match 35 : Alice contre David
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:0
+Action:4
+Action:13
+Action:17
+
+# Match 36 : Lea contre Bob
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+Action:0
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:19
+Action:12
+
+# Match 37 : Ines contre Paul
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:2
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:0
+Action:4
+Action:13
+Action:17
+
+# Match 38 : Farid contre Gaelle
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:0
+Action:1
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:8
+Action:1
+
+# Match 39 : Hugo contre Jules
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+Action:0
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:18
+Action:2
+Action:11
+Action:15
+
+# Match 40 : Karim contre Chloe
+# Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:2
+# Pile ou Face (0: pile, 1: face)
+Action:0
+Action:1
+# Nombre Secret (entre 0 et 19)
+Action:11
+Action:4
+

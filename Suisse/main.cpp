@@ -81,19 +81,26 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-// Jeu 3 : Secret Number (p1 choisit le nb, p2 tente de deviner en 5 essais max)
-participant secretNumber (const participant & p1, const participant & p2){
-    int secret = litUnEntier();
-    int guess = litUnEntier();
-    unsigned cpt (1);
+// Jeu 3 : Nombre Secret (devine le nombre)
+participant NombreSecret (const participant & p1, const participant & p2){
+    int min, max, secret;
+    min = 0;
+    max = 20;
+    secret = rand() % (max-min) + min;
+    int guess1 = litUnEntier();
+    int guess2= litUnEntier();
 
-    while ((guess != secret) && (cpt < 5)){
-        guess = litUnEntier();
-        ++cpt;
+    while (guess1 != secret && guess2 != secret){
+        guess1 = litUnEntier();
+        guess2= litUnEntier();
     }
-    if (guess == secret)
+    
+    if (guess1 == guess2){return (NombreSecret(p1, p2));}
+    
+    else{
+        if (guess1 == secret){return (p1);}
         return p2;
-    return p1;
+    }
 }
 
 // Chaque manche fait jouer les 3 jeux aux deux joueurs, je suis pas sur que c'est ca
@@ -111,8 +118,8 @@ void jouerMatch (participant & p1, participant & p2){
     else
         p2.score++;
 
-    // Jeu 3 : Secret Number
-    if (secretNumber(p1, p2).nom == p1.nom)
+    // Jeu 3 : Nombre Secret
+    if (NombreSecret(p1, p2).nom == p1.nom)
         p1.score++;
     else
         p2.score++;
