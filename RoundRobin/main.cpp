@@ -1,3 +1,21 @@
+/**  ----- ROUND ROBIN -----
+ Tournoi en Round Robin => tout le monde affronte tout le monde.
+ 
+ Fonctionnement général:
+   - 8 joueurs sont lus sur l'entrée standard
+   - Chaque match oppose 2 joueurs sur une série de jeux:
+        1. Pierre-Feuille-Ciseaux
+        2. Pile ou Face
+        3. Nombre Secret (joué uniquement si les 2 joeurs ont une victoire chacun)
+   - Le vainqueur d'un match gagne 1 point au tournoi.
+   - Le classement final est trié par score décroissant de score, puis par nom (ordre alphabétique).
+ 
+ Les coups des joueurs sont lus sur l'entrée standard, dans l'ordre où le moteur les demande.
+ Nous partons du principe que:
+    - Tous les joueurs ont un nom différents
+    - Le programme est exécuter sur un ordinateur sous Linux
+ */
+
 #include <iostream>
 #include <string>
 #include <vector>
@@ -81,11 +99,19 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
+/** --- JEU 3: Nombre Secret ---
+(il départage les joueurs aprés qu'il y ait 1 partout).
+Un nombre secret est tiré dans l'interval [min, max[
+Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un des deux trouve le nombre secret
+Si les deux le trouvent en même temps (au même tour), la manche est annulée et ils en rejouent une jusqu'à avoir un gagnant
+ */
 participant NombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
     max = 20;
     secret = rand() % (max-min) + min;
+
+    // Première proposition de chaque joueur
     int guess1 = litUnEntier();
     int guess2= litUnEntier();
 
