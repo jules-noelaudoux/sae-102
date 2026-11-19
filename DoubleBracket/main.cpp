@@ -62,6 +62,10 @@ void affichVectString (const vector<string> & v){
     cout << endl;
 }
 
+/**
+ * Procedure prenant en parametre un tableau de participants
+ * et qui affiche les attributs de ceux-ci.
+ */
 void affichVectParticipants (const vector<participant> & vPart){
     for (const participant & part : vPart){
         cout << part.nom << endl;
