@@ -66,7 +66,10 @@ void affichVectParticipants (const vector<participant> & vPart){
     }
 }
 
-// Jeu 1 : PFC (0: pierre, 1: feuille, 2: ciseaux)
+/** --- Jeu 1: PFC --- 
+- Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
+- pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
+ */
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
@@ -75,7 +78,7 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
         // match nul donc on rejoue
         return pierreFeuilleCiseau(p1, p2);
     }
-    // 0 bat 2, 1 bat 0, 2 bat 1
+    // 0 bat 2; 1 bat 0; 2 bat 1
     if ((coup1 == 0 && coup2 == 2) ||
         (coup1 == 1 && coup2 == 0) ||
         (coup1 == 2 && coup2 == 1)){
@@ -84,7 +87,11 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     return p2;
 }
 
-// Jeu 2 : Pile ou Face (0: pile, 1: face)
+/** --- JEU 2: Pile ou Face ---
+- Entrées joueurs: (0: pile, 1: face)
+- Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
+- La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
+*/
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
     int choix2 = litUnEntier();
@@ -93,6 +100,7 @@ participant pileOuFace (const participant & p1, const participant & p2){
         // meme choix, on rejoue
         return pileOuFace(p1, p2);
     }
+    //On lance la pièce (0: pile, 1: face):
     int resultat = rand() % 2;
     if (choix1 == resultat)
         return p1;
@@ -102,26 +110,30 @@ participant pileOuFace (const participant & p1, const participant & p2){
 /** --- JEU 3: Nombre Secret ---
 (il départage les joueurs aprés qu'il y ait 1 partout).
 Un nombre secret est tiré dans l'interval [min, max[
-Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un des deux trouve le nombre secret
+Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un d'entre eux trouve le nombre secret
 Si les deux le trouvent en même temps (au même tour), la manche est annulée et ils en rejouent une jusqu'à avoir un gagnant
  */
-participant NombreSecret (const participant & p1, const participant & p2){
+participant nombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
     max = 20;
     secret = rand() % (max-min) + min;
 
-    // Première proposition de chaque joueur
+    // 1ere proposition de chaque joueur
     int guess1 = litUnEntier();
     int guess2= litUnEntier();
 
+    // Tant que personne n'a trouvé, on lit un nouveau tour de propositions.
     while (guess1 != secret && guess2 != secret){
         guess1 = litUnEntier();
         guess2= litUnEntier();
     }
-    
-    if (guess1 == guess2){return (NombreSecret(p1, p2));}
-    
+
+    // ICI => au moins un joueur a trouvé le nombre secret
+    // Si guess1 == guess2, c'est que les deux ont trouvé en même temps: donc égalité => on rejoue
+    if (guess1 == guess2){return (nombreSecret(p1, p2));}
+
+    // Sinon on retourne le gagnant:
     else{
         if (guess1 == secret){return (p1);}
         return p2;
@@ -132,18 +144,18 @@ void jouerMatch (participant & p1, participant & p2){
     unsigned v1 (0);
     unsigned v2 (0);
 
-    // Jeu 1 : PFC
+    // Jeu 1: PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom) {v1++;}
     else {v2++;}
 
-    // Jeu 2 : Pile ou Face
+    // Jeu 2: Pile ou Face
     if (pileOuFace(p1, p2).nom == p1.nom) {v1++;}
     else{v2++;}
 
     // On fait jouer le 3eme jeu uniquement si aucun des deux joueurs n'a déjà gagné les 2 premiers.
     if (v1 == 1 && v2 == 1){
-        // Jeu 3 : Nombre Secret
-        if (NombreSecret(p1, p2).nom == p1.nom){v1++;}
+        // Jeu 3: Nombre Secret
+        if (nombreSecret(p1, p2).nom == p1.nom){v1++;}
         else{v2++;}
 
         // Le gagnant du match gagne 1 point au tournoi
