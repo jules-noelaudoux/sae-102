@@ -38,6 +38,10 @@ int litUnEntier (){
     return stoi(uneChaine);
 }
 
+/**
+ * struct participant representant un participant
+ * materialise avec son nom, son prenom et son score
+ */
 struct participant {
     string nom;
     string prenom;
