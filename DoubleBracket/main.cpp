@@ -96,23 +96,22 @@ participant pileOuFace (const participant & p1, const participant & p2){
 }
 
 // Jeu 3: Nombre Secret (devine le nombre)
-participant NombreSecret (const participant & p1, const participant & p2){
+participant nombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
     max = 20;
     secret = rand() % (max-min) + min;
     int guess1 = litUnEntier();
     int guess2= litUnEntier();
+    int diff1 = abs(secret - guess1);
+    int diff2 = abs(secret - guess2);
 
-    while (guess1 != secret && guess2 != secret){
-        guess1 = litUnEntier();
-        guess2= litUnEntier();
-    }
-    
-    if (guess1 == guess2){return (NombreSecret(p1, p2));}
-    
+    if (diff1 == diff2)
+        return (nombreSecret(p1, p2));
+
     else{
-        if (guess1 == secret){return (p1);}
+        if (diff1 < diff2)
+            return p1;
         return p2;
     }
 }
@@ -136,7 +135,7 @@ participant jouerMatch (const participant & p1, const participant & p2){
 
     // Jeu 3: seulement si egalite
     if (v1 == 1 && v2 == 1){
-        if (NombreSecret(p1, p2).nom == p1.nom)
+        if (nombreSecret(p1, p2).nom == p1.nom)
             v1++;
         else
             v2++;
@@ -213,11 +212,12 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
         tableauPerdants = survivants;
     }
     // Grande finale
+    participant restant1 = tableauGagnants[0];
+    participant restant2 = tableauPerdants[0];
     participant gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
     // Si le champion du looser bracket gagne on rejoue une finale
     if(gagnant.nom == tableauPerdants[0].nom)
         gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
-        
     return gagnant;
 }
 
