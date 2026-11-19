@@ -13,7 +13,7 @@
 * Les coups des joueurs sont lus sur l'entrée standard, dans l'ordre où le moteur les demande.
 * Nous partons du principe que:
 *    - Tous les joueurs ont un nom différents
-*    - Le programme est exécuter sur un ordinateur sous Linux
+*    - Le programme est exécuté sur un ordinateur sous Linux
 */
 
 #include <iostream>
