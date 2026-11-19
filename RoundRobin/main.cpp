@@ -1,20 +1,20 @@
 /**  ----- ROUND ROBIN -----
- Tournoi en Round Robin => tout le monde affronte tout le monde.
- 
- Fonctionnement général:
-   - 8 joueurs sont lus sur l'entrée standard
-   - Chaque match oppose 2 joueurs sur une série de jeux:
-        1. Pierre-Feuille-Ciseaux
-        2. Pile ou Face
-        3. Nombre Secret (joué uniquement si les 2 joeurs ont une victoire chacun)
-   - Le vainqueur d'un match gagne 1 point au tournoi.
-   - Le classement final est trié par score décroissant de score, puis par nom (ordre alphabétique).
- 
- Les coups des joueurs sont lus sur l'entrée standard, dans l'ordre où le moteur les demande.
- Nous partons du principe que:
-    - Tous les joueurs ont un nom différents
-    - Le programme est exécuter sur un ordinateur sous Linux
- */
+* Tournoi en Round Robin => tout le monde affronte tout le monde.
+* 
+* Fonctionnement général:
+*   - 8 joueurs sont lus sur l'entrée standard
+*   - Chaque match oppose 2 joueurs sur une série de jeux:
+*        1. Pierre-Feuille-Ciseaux
+*        2. Pile ou Face
+*        3. Nombre Secret (joué uniquement si les 2 joeurs ont une victoire chacun)
+*   - Le vainqueur d'un match gagne 1 point au tournoi.
+*   - Le classement final est trié par score décroissant de score, puis par nom (ordre alphabétique).
+* 
+* Les coups des joueurs sont lus sur l'entrée standard, dans l'ordre où le moteur les demande.
+* Nous partons du principe que:
+*    - Tous les joueurs ont un nom différents
+*    - Le programme est exécuter sur un ordinateur sous Linux
+*/
 
 #include <iostream>
 #include <string>
@@ -94,9 +94,9 @@ void affichVectParticipants (const vector<participant> & vPart){
 }
 
 /** --- Jeu 1: PFC --- 
-- Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
-- pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
- */
+* - Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
+* - pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
+*/
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
@@ -115,9 +115,9 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
 }
 
 /** --- JEU 2: Pile ou Face ---
-- Entrées joueurs: (0: pile, 1: face)
-- Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
-- La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
+* - Entrées joueurs: (0: pile, 1: face)
+* - Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
+* - La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
 */
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
@@ -135,11 +135,11 @@ participant pileOuFace (const participant & p1, const participant & p2){
 }
 
 /** --- JEU 3: Nombre Secret ---
-(il départage les joueurs aprés qu'il y ait 1 partout).
-Un nombre secret est tiré dans l'interval [min, max[
-Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un d'entre eux trouve le nombre secret
-Si les deux le trouvent en même temps (au même tour), la manche est annulée et ils en rejouent une jusqu'à avoir un gagnant
- */
+* (il départage les joueurs aprés qu'il y ait 1 partout).
+* Un nombre secret est tiré dans l'interval [min, max[
+* Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un d'entre eux trouve le nombre secret
+* Si les deux le trouvent en même temps (au même tour), la manche est annulée et ils en rejouent une jusqu'à avoir un gagnant
+*/
 participant nombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
