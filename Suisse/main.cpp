@@ -75,7 +75,10 @@ void affichVectParticipants (const vector<participant> & vPart){
     }
 }
 
-// Jeu 1: PFC (0: pierre; 1: feuille; 2: ciseaux)
+/** --- Jeu 1: PFC --- 
+* - Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
+* - pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
+*/
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
