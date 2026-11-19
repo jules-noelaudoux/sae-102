@@ -5,37 +5,45 @@ Joueur:Arthur
 Joueur:Bastien
 Joueur:Camille
 Joueur:Chloe
-Joueur:David
-Joueur:Dylan
+Joueur:Clement
+Joueur:Damien
 Joueur:Emma
 Joueur:Enzo
 Joueur:Eva
-Joueur:Farid
-Joueur:Florian
+Joueur:Fanny
+Joueur:Florent
 Joueur:Gabriel
 Joueur:Gaelle
 Joueur:Hugo
 Joueur:Ines
 Joueur:Jade
 Joueur:Jules
-Joueur:Karim
+Joueur:Kilian
 Joueur:Lea
 Joueur:Leo
+Joueur:Lina
 Joueur:Louis
 Joueur:Lucas
+Joueur:Maelle
 Joueur:Manon
+Joueur:Mathis
 Joueur:Maxime
+Joueur:Milo
 Joueur:Nathan
 Joueur:Nina
 Joueur:Noah
-Joueur:Nolan
-Joueur:Olivia
-Joueur:Oscar
+Joueur:Noemie
+Joueur:Oceane
+Joueur:Olivier
 Joueur:Paul
+Joueur:Pauline
 Joueur:Quentin
+Joueur:Raphael
 Joueur:Romane
+Joueur:Sacha
 Joueur:Sarah
 Joueur:Simon
+Joueur:Sofia
 Joueur:Theo
 Joueur:Thomas
 Joueur:Tom
@@ -44,1238 +52,793 @@ Joueur:Victor
 Joueur:Yanis
 Joueur:Zoe
 Joueur:Adrien
+Joueur:Amelie
 Joueur:Antoine
-Joueur:Baptiste
-Joueur:Clement
-Joueur:Corentin
-Joueur:Etienne
-Joueur:Gregoire
-Joueur:Guillaume
-Joueur:Julien
-Joueur:Mathieu
-Joueur:Nicolas
-Joueur:Pierre
-Joueur:Raphael
-Joueur:Sebastien
-Joueur:Tristan
-Joueur:Vincent
-Joueur:William
-Joueur:Xavier
-Joueur:Yves
-Joueur:Zacharie
 Joueur:Axel
+Joueur:Baptiste
+Joueur:Clara
+Joueur:Dylan
+Joueur:Elise
+Joueur:Ethan
+Joueur:Florian
+Joueur:Gaspard
+Joueur:Helene
+Joueur:Ilias
 
 #TOUR 1 (Winner Bracket: 64 joueurs)
-#Match 1 (WB T1): Alice vs Arthur
-#Jeu 1: PFC
+#Match 1 (WB T1): Alice vs Arthur (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
+Action:1
+Action:1
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:18
-Action:11
-
-#Match 2 (WB T1): Bastien vs Camille
-#Jeu 1: PFC
-Action:1
+#Match 2 (WB T1): Bastien vs Camille (2-0)
+Action:0
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
+Action:0
+#Match 3 (WB T1): Chloe vs Clement (2-0)
 Action:0
 Action:1
-
-#Match 3 (WB T1): Chloe vs David
-#Jeu 1: PFC
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
+#Match 4 (WB T1): Damien vs Emma (2-0)
 Action:0
-Action:1
-
-#Match 4 (WB T1): Dylan vs Emma
-#Jeu 1: PFC
 Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:4
-Action:11
-
-#Match 5 (WB T1): Enzo vs Eva
-#Jeu 1: PFC
+Action:0
+#Match 5 (WB T1): Enzo vs Eva (1 partout puis jeu 3)
 Action:1
-Action:2
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+Action:0
 Action:3
-Action:16
-
-#Match 6 (WB T1): Farid vs Florian
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 7 (WB T1): Gabriel vs Gaelle
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 8 (WB T1): Hugo vs Ines
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 9 (WB T1): Jade vs Jules
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 10 (WB T1): Karim vs Lea
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:1
-Action:8
-
-#Match 11 (WB T1): Leo vs Louis
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 12 (WB T1): Lucas vs Manon
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 13 (WB T1): Maxime vs Nathan
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 14 (WB T1): Nina vs Noah
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:18
-Action:5
-
-#Match 15 (WB T1): Nolan vs Olivia
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:13
+Action:3
+Action:17
 Action:6
-
-#Match 16 (WB T1): Oscar vs Paul
-#Jeu 1: PFC
+#Match 6 (WB T1): Fanny vs Florent (1 partout puis jeu 3)
+Action:0
+Action:2
+Action:1
+Action:0
+Action:14
+Action:18
+#Match 7 (WB T1): Gabriel vs Gaelle (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-
-#Match 17 (WB T1): Quentin vs Romane
-#Jeu 1: PFC
+#Match 8 (WB T1): Hugo vs Ines (2-0)
 Action:1
 Action:2
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+#Match 9 (WB T1): Jade vs Jules (1 partout puis jeu 3)
+Action:2
+Action:0
+Action:1
+Action:0
+Action:16
+Action:17
+#Match 10 (WB T1): Kilian vs Lea (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 11 (WB T1): Leo vs Lina (1 partout puis jeu 3)
+Action:2
+Action:1
+Action:0
+Action:1
+Action:11
 Action:19
+#Match 12 (WB T1): Louis vs Lucas (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 13 (WB T1): Maelle vs Manon (2-0)
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 14 (WB T1): Mathis vs Maxime (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+#Match 15 (WB T1): Milo vs Nathan (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+#Match 16 (WB T1): Nina vs Noah (2-0)
+Action:2
+Action:1
+Action:0
+Action:1
+#Match 17 (WB T1): Noemie vs Oceane (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 18 (WB T1): Olivier vs Paul (1 partout puis jeu 3)
+Action:0
+Action:2
+Action:1
+Action:0
+Action:10
+Action:13
+#Match 19 (WB T1): Pauline vs Quentin (2-0)
+Action:1
+Action:1
+Action:2
+Action:1
+Action:1
+Action:0
+#Match 20 (WB T1): Raphael vs Romane (2-0)
+Action:1
+Action:2
+Action:0
+Action:1
+#Match 21 (WB T1): Sacha vs Sarah (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:1
+Action:0
+Action:13
+Action:10
+#Match 22 (WB T1): Simon vs Sofia (2-0)
+Action:2
+Action:1
+Action:0
+Action:1
+#Match 23 (WB T1): Theo vs Thomas (2-0)
+Action:0
+Action:1
+Action:1
+Action:0
+#Match 24 (WB T1): Tom vs Valentin (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:0
+Action:1
+Action:18
+Action:0
+#Match 25 (WB T1): Victor vs Yanis (1 partout puis jeu 3)
+Action:1
+Action:2
+Action:1
+Action:0
 Action:12
-
-#Match 18 (WB T1): Sarah vs Simon
-#Jeu 1: PFC
-Action:0
 Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 19 (WB T1): Theo vs Thomas
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 20 (WB T1): Tom vs Valentin
-#Jeu 1: PFC
+#Match 26 (WB T1): Zoe vs Adrien (2-0)
 Action:1
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
+Action:0
+#Match 27 (WB T1): Amelie vs Antoine (2-0)
+Action:1
+Action:0
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+#Match 28 (WB T1): Axel vs Baptiste (2-0)
+Action:2
+Action:1
+Action:0
+Action:1
+#Match 29 (WB T1): Clara vs Dylan (2-0)
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 30 (WB T1): Elise vs Ethan (2-0)
+Action:1
+Action:2
+Action:1
+Action:0
+#Match 31 (WB T1): Florian vs Gaspard (2-0)
+Action:0
+Action:1
+Action:0
+Action:1
+#Match 32 (WB T1): Helene vs Ilias (2-0)
+Action:1
+Action:2
+Action:0
+Action:1
+
+#TOUR 1 (Loser Bracket: 32 joueurs)
+#Match 33 (LB T1): Alice vs Camille (1 partout puis jeu 3)
+Action:2
+Action:0
+Action:0
+Action:0
+Action:1
+Action:0
+Action:9
+Action:14
+#Match 34 (LB T1): Chloe vs Emma (1 partout puis jeu 3)
+Action:1
+Action:2
+Action:1
+Action:1
+Action:1
+Action:0
 Action:1
 Action:8
-
-#Match 21 (WB T1): Victor vs Yanis
-#Jeu 1: PFC
+#Match 35 (LB T1): Enzo vs Florent (1 partout puis jeu 3)
+Action:1
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:7
-Action:0
-
-#Match 22 (WB T1): Zoe vs Adrien
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-
-#Match 23 (WB T1): Antoine vs Baptiste
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:10
-Action:3
-
-#Match 24 (WB T1): Clement vs Corentin
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:4
-Action:11
-
-#Match 25 (WB T1): Etienne vs Gregoire
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
 Action:17
 Action:10
-
-#Match 26 (WB T1): Guillaume vs Julien
-#Jeu 1: PFC
-Action:1
+#Match 36 (LB T1): Gabriel vs Hugo (2-0)
+Action:0
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
+Action:0
+#Match 37 (LB T1): Jules vs Lea (1 partout puis jeu 3)
+Action:1
+Action:0
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:14
-Action:1
-
-#Match 27 (WB T1): Mathieu vs Nicolas
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 28 (WB T1): Pierre vs Raphael
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 29 (WB T1): Sebastien vs Tristan
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 30 (WB T1): Vincent vs William
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 31 (WB T1): Xavier vs Yves
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 32 (WB T1): Zacharie vs Axel
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:12
 Action:19
-
-#Match 33 (LB initial T1): Alice vs Bastien
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 34 (LB initial T1): Chloe vs Emma
-#Jeu 1: PFC
+Action:3
+#Match 38 (LB T1): Leo vs Lucas (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
-Action:1
-
-#Match 35 (LB initial T1): Enzo vs Farid
-#Jeu 1: PFC
-Action:1
+#Match 39 (LB T1): Maelle vs Maxime (1 partout puis jeu 3)
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
 Action:1
-
-#Match 36 (LB initial T1): Gabriel vs Hugo
-#Jeu 1: PFC
+Action:1
+Action:16
+#Match 40 (LB T1): Nathan vs Noah (2-0)
+Action:1
+Action:0
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
+#Match 41 (LB T1): Oceane vs Olivier (1 partout puis jeu 3)
+Action:1
+Action:1
 Action:0
 Action:1
-
-#Match 37 (LB initial T1): Jade vs Lea
-#Jeu 1: PFC
+Action:1
+Action:0
+Action:4
+Action:0
+#Match 42 (LB T1): Quentin vs Raphael (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 43 (LB T1): Sacha vs Sofia (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 44 (LB T1): Theo vs Valentin (2-0)
+Action:0
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
+#Match 45 (LB T1): Victor vs Zoe (1 partout puis jeu 3)
+Action:2
+Action:0
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:12
+Action:10
+Action:17
+#Match 46 (LB T1): Antoine vs Baptiste (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:0
+Action:1
+Action:18
 Action:5
-
-#Match 38 (LB initial T1): Leo vs Lucas
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:0
-Action:7
-
-#Match 39 (LB initial T1): Maxime vs Noah
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 40 (LB initial T1): Nolan vs Oscar
-#Jeu 1: PFC
+#Match 47 (LB T1): Clara vs Elise (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-
-#Match 41 (LB initial T1): Quentin vs Sarah
-#Jeu 1: PFC
-Action:1
+#Match 48 (LB T1): Florian vs Helene (1 partout puis jeu 3)
+Action:0
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
-Action:1
-
-#Match 42 (LB initial T1): Theo vs Valentin
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 43 (LB initial T1): Victor vs Zoe
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:15
-Action:8
-
-#Match 44 (LB initial T1): Antoine vs Corentin
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:15
-Action:2
-
-#Match 45 (LB initial T1): Etienne vs Julien
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:8
-Action:1
-
-#Match 46 (LB initial T1): Mathieu vs Pierre
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:6
-Action:13
-
-#Match 47 (LB initial T1): Sebastien vs Vincent
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 48 (LB initial T1): Xavier vs Axel
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:5
-Action:12
-
+Action:4
+Action:18
 
 #TOUR 2 (Winner Bracket: 32 joueurs)
-#Match 49 (WB T2): Arthur vs Camille
-#Jeu 1: PFC
+#Match 49 (WB T2): Arthur vs Bastien (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 50 (WB T2): Clement vs Damien (2-0)
+Action:1
+Action:0
+Action:0
+Action:1
+#Match 51 (WB T2): Eva vs Fanny (2-0)
+Action:0
+Action:1
+Action:0
+Action:1
+#Match 52 (WB T2): Gaelle vs Ines (2-0)
+Action:2
+Action:1
+Action:0
+Action:0
+Action:1
+Action:0
+#Match 53 (WB T2): Jade vs Kilian (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
-Action:1
-
-#Match 50 (WB T2): David vs Dylan
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
+#Match 54 (WB T2): Lina vs Louis (2-0)
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:12
-Action:19
-
-#Match 51 (WB T2): Eva vs Florian
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 52 (WB T2): Gaelle vs Ines
-#Jeu 1: PFC
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-
-#Match 53 (WB T2): Jules vs Karim
-#Jeu 1: PFC
-Action:1
+#Match 55 (WB T2): Manon vs Mathis (1 partout puis jeu 3)
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:8
-Action:1
-
-#Match 54 (WB T2): Louis vs Manon
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 55 (WB T2): Nathan vs Nina
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 56 (WB T2): Olivia vs Paul
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 57 (WB T2): Romane vs Simon
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
 Action:17
 Action:10
-
-#Match 58 (WB T2): Thomas vs Tom
-#Jeu 1: PFC
+#Match 56 (WB T2): Milo vs Nina (1 partout puis jeu 3)
 Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-
-#Match 59 (WB T2): Yanis vs Adrien
-#Jeu 1: PFC
 Action:1
-Action:2
-#Jeu 2: Pile ou Face
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:5
-Action:18
-
-#Match 60 (WB T2): Baptiste vs Clement
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 61 (WB T2): Gregoire vs Guillaume
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 62 (WB T2): Nicolas vs Raphael
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 63 (WB T2): Tristan vs William
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:12
-Action:5
-
-#Match 64 (WB T2): Yves vs Zacharie
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 65 (LB croises T2): Bastien vs Arthur
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:10
-Action:3
-
-#Match 66 (LB croises T2): Emma vs Dylan
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 67 (LB croises T2): Farid vs Eva
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 68 (LB croises T2): Hugo vs Gaelle
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:19
-Action:6
-
-#Match 69 (LB croises T2): Lea vs Jules
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 70 (LB croises T2): Leo vs Louis
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:15
-Action:2
-
-#Match 71 (LB croises T2): Noah vs Nathan
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+Action:9
 Action:16
-Action:9
-
-#Match 72 (LB croises T2): Oscar vs Olivia
-#Jeu 1: PFC
+#Match 57 (WB T2): Noemie vs Paul (2-0)
 Action:0
+Action:2
 Action:1
-#Jeu 2: Pile ou Face
 Action:0
+#Match 58 (WB T2): Pauline vs Romane (2-0)
 Action:1
-
-#Match 73 (LB croises T2): Sarah vs Romane
-#Jeu 1: PFC
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
+#Match 59 (WB T2): Sarah vs Simon (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 60 (WB T2): Thomas vs Tom (2-0)
+Action:2
+Action:1
 Action:0
 Action:1
-
-#Match 74 (LB croises T2): Valentin vs Thomas
-#Jeu 1: PFC
+#Match 61 (WB T2): Yanis vs Adrien (2-0)
+Action:1
+Action:0
+Action:0
+Action:1
+#Match 62 (WB T2): Amelie vs Axel (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 63 (WB T2): Dylan vs Ethan (2-0)
+Action:2
+Action:1
+Action:0
+Action:1
+#Match 64 (WB T2): Gaspard vs Ilias (2-0)
 Action:1
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:14
-Action:1
 
-#Match 75 (LB croises T2): Zoe vs Yanis
-#Jeu 1: PFC
+#TOUR 2 (Loser Bracket croise: 32 joueurs)
+#Match 65 (LB T2): Camille vs Bastien (2-0)
 Action:0
+Action:2
 Action:1
-#Jeu 2: Pile ou Face
 Action:0
+#Match 66 (LB T2): Emma vs Damien (2-0)
 Action:1
-
-#Match 76 (LB croises T2): Antoine vs Baptiste
-#Jeu 1: PFC
+Action:1
+Action:1
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:0
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+#Match 67 (LB T2): Florent vs Eva (2-0)
+Action:0
+Action:0
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 68 (LB T2): Gabriel vs Ines (2-0)
+Action:0
+Action:1
+Action:1
+Action:0
+#Match 69 (LB T2): Lea vs Jade (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 70 (LB T2): Lucas vs Louis (2-0)
+Action:2
+Action:0
+Action:0
+Action:1
+#Match 71 (LB T2): Maxime vs Manon (2-0)
+Action:1
+Action:2
+Action:1
+Action:0
+#Match 72 (LB T2): Nathan vs Nina (2-0)
+Action:2
+Action:1
+Action:1
+Action:0
+#Match 73 (LB T2): Oceane vs Paul (2-0)
+Action:2
+Action:1
+Action:1
+Action:0
+#Match 74 (LB T2): Quentin vs Pauline (1 partout puis jeu 3)
+Action:1
+Action:2
+Action:1
+Action:0
+Action:16
+Action:6
+#Match 75 (LB T2): Sacha vs Simon (2-0)
+Action:0
+Action:1
+Action:0
+Action:1
+#Match 76 (LB T2): Theo vs Tom (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 77 (LB T2): Victor vs Adrien (1 partout puis jeu 3)
+Action:1
+Action:1
+Action:1
+Action:2
+Action:0
+Action:1
 Action:4
-Action:11
-
-#Match 77 (LB croises T2): Julien vs Gregoire
-#Jeu 1: PFC
-Action:1
+Action:7
+#Match 78 (LB T2): Baptiste vs Axel (2-0)
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+#Match 79 (LB T2): Elise vs Ethan (1 partout puis jeu 3)
+Action:1
 Action:0
-Action:13
-
-#Match 78 (LB croises T2): Mathieu vs Nicolas
-#Jeu 1: PFC
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:2
-Action:9
-
-#Match 79 (LB croises T2): Vincent vs Tristan
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
 Action:17
-Action:10
-
-#Match 80 (LB croises T2): Xavier vs Yves
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
+Action:7
+#Match 80 (LB T2): Florian vs Gaspard (2-0)
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:3
-Action:10
-
+Action:0
+Action:1
 
 #TOUR 3 (Winner Bracket: 16 joueurs)
-#Match 81 (WB T3): Camille vs David
-#Jeu 1: PFC
+#Match 81 (WB T3): Arthur vs Clement (2-0)
 Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:8
-Action:1
-
-#Match 82 (WB T3): Florian vs Ines
-#Jeu 1: PFC
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
+#Match 82 (WB T3): Fanny vs Gaelle (2-0)
+Action:1
+Action:0
+Action:0
+Action:0
 Action:0
 Action:1
-
-#Match 83 (WB T3): Karim vs Manon
-#Jeu 1: PFC
+#Match 83 (WB T3): Kilian vs Lina (2-0)
 Action:1
-Action:2
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-
-#Match 84 (WB T3): Nina vs Paul
-#Jeu 1: PFC
+Action:0
+#Match 84 (WB T3): Mathis vs Milo (2-0)
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:16
-Action:3
-
-#Match 85 (WB T3): Simon vs Tom
-#Jeu 1: PFC
+Action:0
+#Match 85 (WB T3): Noemie vs Romane (2-0)
 Action:2
 Action:0
-#Jeu 2: Pile ou Face
+Action:1
+Action:0
+#Match 86 (WB T3): Sarah vs Thomas (1 partout puis jeu 3)
+Action:2
+Action:0
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:14
+Action:4
+Action:13
+#Match 87 (WB T3): Yanis vs Amelie (1 partout puis jeu 3)
+Action:2
+Action:0
+Action:0
+Action:1
+Action:2
+Action:11
+#Match 88 (WB T3): Dylan vs Ilias (1 partout puis jeu 3)
+Action:0
+Action:1
+Action:0
+Action:1
 Action:7
+Action:2
 
-#Match 86 (WB T3): Adrien vs Clement
-#Jeu 1: PFC
+#TOUR 3 (Loser Bracket interne: 16 joueurs)
+#Match 89 (LB T3): Camille vs Damien (2-0)
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 90 (LB T3): Florent vs Ines (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 91 (LB T3): Lea vs Louis (2-0)
+Action:0
+Action:0
+Action:0
+Action:2
+Action:0
+Action:1
+#Match 92 (LB T3): Manon vs Nathan (2-0)
 Action:1
 Action:2
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
+#Match 93 (LB T3): Oceane vs Pauline (2-0)
+Action:1
+Action:2
+Action:1
+Action:1
+Action:0
+Action:1
+#Match 94 (LB T3): Simon vs Theo (2-0)
+Action:1
+Action:0
+Action:1
+Action:0
+#Match 95 (LB T3): Adrien vs Baptiste (2-0)
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 96 (LB T3): Ethan vs Gaspard (2-0)
+Action:1
+Action:2
+Action:1
+Action:0
 
-#Match 87 (WB T3): Guillaume vs Raphael
-#Jeu 1: PFC
+#TOUR 4 (Loser Bracket croise: 16 joueurs)
+#Match 97 (LB T4): Damien vs Clement (1 partout puis jeu 3)
+Action:1
 Action:0
 Action:1
-#Jeu 2: Pile ou Face
 Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+Action:17
 Action:5
-Action:18
-
-#Match 88 (WB T3): William vs Zacharie
-#Jeu 1: PFC
+#Match 98 (LB T4): Florent vs Gaelle (2-0)
+Action:1
 Action:2
-Action:0
-#Jeu 2: Pile ou Face
 Action:0
 Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
+#Match 99 (LB T4): Lea vs Lina (2-0)
+Action:1
+Action:0
+Action:1
+Action:1
+Action:0
+Action:1
+#Match 100 (LB T4): Nathan vs Mathis (2-0)
 Action:2
+Action:0
+Action:1
+Action:0
+#Match 101 (LB T4): Pauline vs Noemie (1 partout puis jeu 3)
+Action:2
+Action:1
+Action:1
+Action:0
+Action:4
+Action:2
+#Match 102 (LB T4): Simon vs Sarah (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+#Match 103 (LB T4): Baptiste vs Amelie (2-0)
+Action:2
+Action:0
+Action:0
+Action:1
+#Match 104 (LB T4): Gaspard vs Ilias (2-0)
+Action:1
+Action:0
+Action:0
+Action:1
+
+#QUARTS DE FINALE WINNER BRACKET (8 joueurs)
+#Match 105 (Quart WB): Arthur vs Fanny (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:0
+Action:1
+Action:1
+Action:0
+#Match 106 (Quart WB): Kilian vs Milo (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+#Match 107 (Quart WB): Romane vs Thomas (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:1
+Action:0
+Action:4
+Action:19
+#Match 108 (Quart WB): Yanis vs Dylan (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+
+#TOUR 5 (Loser Bracket interne: 8 joueurs)
+#Match 109 (LB T5): Clement vs Gaelle (1 partout puis jeu 3)
+Action:0
+Action:2
+Action:1
+Action:0
+Action:19
+Action:9
+#Match 110 (LB T5): Lea vs Mathis (2-0)
+Action:0
+Action:2
+Action:1
+Action:0
+#Match 111 (LB T5): Noemie vs Simon (2-0)
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 112 (LB T5): Amelie vs Gaspard (1 partout puis jeu 3)
+Action:1
+Action:2
+Action:1
+Action:0
+Action:9
+Action:19
+
+#TOUR 6 (Loser Bracket croise: 8 joueurs)
+#Match 113 (LB T6): Gaelle vs Fanny (2-0)
+Action:0
+Action:0
+Action:0
+Action:1
+Action:0
+Action:1
+#Match 114 (LB T6): Lea vs Milo (1 partout puis jeu 3)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:15
+Action:9
+#Match 115 (LB T6): Simon vs Thomas (2-0)
+Action:1
+Action:2
+Action:0
+Action:1
+#Match 116 (LB T6): Amelie vs Dylan (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+
+#DEMI-FINALES WINNER BRACKET (4 joueurs)
+#Match 117 (Demi WB): Arthur vs Kilian (2-0)
+Action:0
+Action:0
+Action:2
+Action:0
+Action:1
+Action:0
+#Match 118 (Demi WB): Romane vs Yanis (2-0)
+Action:1
+Action:2
+Action:1
+Action:0
+
+#TOUR 7 (Loser Bracket interne: 4 joueurs)
+#Match 119 (LB T7): Fanny vs Milo (2-0)
+Action:2
+Action:1
+Action:0
+Action:1
+#Match 120 (LB T7): Thomas vs Amelie (1 partout puis jeu 3)
+Action:2
+Action:2
+Action:2
+Action:1
+Action:1
+Action:0
+Action:5
+Action:1
+
+#TOUR 8 (Loser Bracket croise: 4 joueurs)
+#Match 121 (LB T8): Fanny vs Arthur (1 partout puis jeu 3)
+Action:2
+Action:2
+Action:1
+Action:0
+Action:1
+Action:0
+Action:0
+Action:19
+#Match 122 (LB T8): Thomas vs Romane (2-0)
+Action:0
+Action:2
+Action:0
+Action:1
+
+#FINALE WINNER BRACKET
+#Match 123 (Finale WB): Kilian vs Yanis (2-0)
+Action:1
+Action:2
+Action:1
+Action:0
+
+#DEMI-FINALE LOSER BRACKET (perdant = 4e place)
+#Match 124 (Demi LB): Arthur vs Thomas (1 partout puis jeu 3)
+Action:1
+Action:0
+Action:0
+Action:1
+Action:0
 Action:9
 
-#Match 89 (LB repechage T3): Arthur vs Dylan
-#Jeu 1: PFC
+#FINALE LOSER BRACKET (perdant = 3e place)
+#Match 125 (Finale LB): Thomas vs Kilian (1 partout puis jeu 3)
 Action:1
+Action:0
+Action:1
+Action:0
 Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:18
-Action:11
-
-#Match 90 (LB repechage T3): Eva vs Hugo
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:7
-Action:14
-
-#Match 91 (LB repechage T3): Jules vs Leo
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:19
-Action:12
-
-#Match 92 (LB repechage T3): Nathan vs Olivia
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:7
-Action:14
-
-#Match 93 (LB repechage T3): Romane vs Valentin
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:5
-Action:18
-
-#Match 94 (LB repechage T3): Yanis vs Antoine
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 95 (LB repechage T3): Gregoire vs Mathieu
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 96 (LB repechage T3): Tristan vs Xavier
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:5
-Action:12
-
-#Match 97 (LB croises T3): Dylan vs Camille
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 98 (LB croises T3): Eva vs Florian
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 99 (LB croises T3): Leo vs Karim
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 100 (LB croises T3): Nathan vs Paul
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:19
-Action:6
-
-#Match 101 (LB croises T3): Valentin vs Simon
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:7
-Action:0
-
-#Match 102 (LB croises T3): Antoine vs Adrien
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:0
-Action:7
-
-#Match 103 (LB croises T3): Mathieu vs Guillaume
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:3
-Action:16
-
-#Match 104 (LB croises T3): Tristan vs Zacharie
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:15
-Action:2
-
-#TOUR 4 (Winner Bracket: 8 joueurs)
-#Match 105 (WB T4): David vs Ines
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:5
-Action:18
-
-#Match 106 (WB T4): Manon vs Nina
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 107 (WB T4): Tom vs Clement
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 108 (WB T4): Raphael vs William
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:14
-Action:1
-
-#Match 109 (LB repechage T4): Camille vs Florian
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 110 (LB repechage T4): Karim vs Nathan
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:12
-Action:19
-
-#Match 111 (LB repechage T4): Simon vs Antoine
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 112 (LB repechage T4): Guillaume vs Tristan
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:11
-Action:18
-
-#Match 113 (LB croises T4): Florian vs David
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:15
-Action:8
-
-#Match 114 (LB croises T4): Karim vs Manon
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:3
 Action:10
 
-#Match 115 (LB croises T4): Antoine vs Tom
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:14
-Action:7
-
-#Match 116 (LB croises T4): Guillaume vs William
-#Jeu 1: PFC
+#GRANDE FINALE (victoire directe du champion Winner Bracket)
+#Match 126 (Grande Finale): Yanis vs Kilian (1 partout puis jeu 3)
 Action:1
 Action:2
-#Jeu 2: Pile ou Face
-Action:0
 Action:1
-
-
-#TOUR 5 (Winner Bracket: 4 joueurs)
-#Match 117 (WB T5): Ines vs Nina
-#Jeu 1: PFC
 Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 118 (WB T5): Clement vs Raphael
-#Jeu 1: PFC
 Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:9
-Action:16
-
-#Match 119 (LB repechage T5): David vs Karim
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:1
-Action:14
-
-#Match 120 (LB repechage T5): Tom vs William
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-#Match 121 (LB croises T5): Karim vs Ines
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:2
-Action:15
-
-#Match 122 (LB croises T5): William vs Raphael
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-
-#TOUR 6 (Winner Bracket: 2 joueurs)
-#Match 123 (WB T6): Nina vs Clement
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:2
-Action:15
-
-#Match 124 (LB repechage T6): Ines vs Raphael
-#Jeu 1: PFC
-Action:2
-Action:0
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:3
-Action:10
-
-#Match 125 (LB croises T6): Ines vs Nina
-#Jeu 1: PFC
-Action:1
-Action:2
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-
-
-#GRANDE FINALE
-#Match 126 (Grande Finale): Clement vs Nina
-#Jeu 1: PFC
-Action:0
-Action:1
-#Jeu 2: Pile ou Face
-Action:0
-Action:1
-#Jeu 3: Nombre Secret (car 1 partout)
-Action:0
-Action:7
+Action:11
