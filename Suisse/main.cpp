@@ -48,7 +48,7 @@ void affichVectParticipants (const vector<participant> & vPart){
     }
 }
 
-// Jeu 1 : PFC (0: pierre, 1: feuille, 2: ciseaux)
+// Jeu 1: PFC (0: pierre; 1: feuille; 2: ciseaux)
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
@@ -66,7 +66,7 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     return p2; // on retourne le gagnant
 }
 
-// Jeu 2 : Pile ou Face (0: pile, 1: face)
+// Jeu 2: Pile ou Face (0: pile; 1: face)
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
     int choix2 = litUnEntier();
@@ -81,7 +81,7 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-// Jeu 3 : Nombre Secret (devine le nombre)
+// Jeu 3: Nombre Secret (devine le nombre)
 participant NombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
@@ -106,19 +106,19 @@ participant NombreSecret (const participant & p1, const participant & p2){
 // Chaque manche fait jouer les 3 jeux aux deux joueurs, je suis pas sur que c'est ca
 void jouerMatch (participant & p1, participant & p2){
     // 1pt par jeu
-    // Jeu 1 : PFC
+    // Jeu 1: PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
         p1.score++;
     else
         p2.score++;
 
-    // Jeu 2 : Pile ou Face
+    // Jeu 2: Pile ou Face
     if (pileOuFace(p1, p2).nom == p1.nom)
         p1.score++;
     else
         p2.score++;
 
-    // Jeu 3 : Nombre Secret
+    // Jeu 3: Nombre Secret
     if (NombreSecret(p1, p2).nom == p1.nom)
         p1.score++;
     else
