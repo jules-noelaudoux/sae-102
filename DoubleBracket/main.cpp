@@ -41,7 +41,7 @@ int litUnEntier (){
 struct participant {
     string nom;
     string prenom;
-    unsigned score;
+    size_t score;
 };
 
 bool compare2part (const participant & p1, const participant & p2){
@@ -118,8 +118,8 @@ participant nombreSecret (const participant & p1, const participant & p2){
 
 // Manche en BO3 (2 victoires pour gagner le match)
 participant jouerMatch (const participant & p1, const participant & p2){
-    unsigned v1 (0);
-    unsigned v2 (0);
+    size_t v1 (0);
+    size_t v2 (0);
 
     // Jeu 1: PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
@@ -146,7 +146,7 @@ participant jouerMatch (const participant & p1, const participant & p2){
 }
 
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
-    for (unsigned i = 0; i < joueurs.size(); i += 2){
+    for (size_t i = 0; i < joueurs.size(); i += 2){
         participant gagnant = jouerMatch(joueurs[i], joueurs[i+1]);
         if (gagnant.nom == joueurs[i].nom) {
             gagnants.push_back(joueurs[i]);
@@ -164,7 +164,7 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
         cout << "Erreur : les deux tableaux n'ont pas la meme taille." << endl;
         return;
     }
-    for (unsigned i = 0; i < anciens.size(); ++i){
+    for (size_t i = 0; i < anciens.size(); ++i){
         participant gagnant = jouerMatch(anciens[i], nouveaux[i]);
         if (gagnant.nom == anciens[i].nom) {
             gagnants.push_back(anciens[i]);
@@ -230,11 +230,11 @@ vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
     return {gagnant, deuxieme, troisieme, quatrieme}    ;
 }
 
-const unsigned KNbJoueurs (64); // On initialise le nombre de joueurs
+const size_t KNbJoueurs (64); // On initialise le nombre de joueurs
 
 vector<participant> lireParticipants (){
     vector<participant> v;
-    for (unsigned i (0); i < KNbJoueurs; ++i){
+    for (size_t i (0); i < KNbJoueurs; ++i){
         string ligne = litUneString();
         if (ligne.size() >= 7 && ligne.substr(0, 7) == "Joueur:")
             ligne = ligne.substr(7);
@@ -248,7 +248,7 @@ int main()
     srand(47);
     vector<participant> joueurs = lireParticipants();
     vector<participant> top4 = tournoiDoubleBracket(joueurs);
-    for (unsigned i = 0; i < top4.size(); ++i) {
+    for (size_t i = 0; i < top4.size(); ++i) {
         cout << (i + 1) << ":" << top4[i].nom << endl;
     }
     return 0;
