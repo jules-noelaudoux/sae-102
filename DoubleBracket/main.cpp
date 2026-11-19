@@ -48,10 +48,6 @@ struct participant {
     size_t score;
 };
 
-bool compare2part (const participant & p1, const participant & p2){
-    return p1.prenom < p2.prenom;
-}
-
 /**
  * Procedure prenant en parametre un tableau de strings
  * et qui affiche le contenu de celui-ci sur le terminal.
