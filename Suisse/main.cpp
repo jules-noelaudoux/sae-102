@@ -18,28 +18,47 @@ string litUneString (){
 int litUnEntier (){
     string uneChaine = litUneString();
     if (uneChaine.size() >= 7 && uneChaine.substr(0, 7) == "Action:")
-        return stoi(uneChaine.substr(7));
+        return stoi(uneChaine.substr(7));  // on renvoie le nombre sans la chaine "Action:"
     return stoi(uneChaine);
 }
 
+/*
+ * struct participant representant un participant
+ * materialise avec son nom, son prenom et son score
+ */
 struct participant {
     string nom;
     string prenom;
     unsigned score;
 };
 
+/*
+ * Fonction compare2part() prenant en paramètres
+ * deux participants et renvoie si le participant 1
+ * a le meilleur score ou non.
+ * Si egalite alors on classe en fonction du nom
+ * par ordre alphabetique.
+ */
 bool compare2part (const participant & p1, const participant & p2){
     if (p1.score != p2.score)
         return p1.score > p2.score;
-    return p1.nom < p2.nom;
+    return p1.nom < p2.nom;  // gestion des egalites
 }
 
+/*
+ * Procedure prenant en parametre un tableau de strings
+ * et qui affiche le contenu de celui-ci sur le terminal.
+ */
 void affichVectString (const vector<string> & v){
     for (const string & val : v)
         cout << val << '\t';
     cout << endl;
 }
 
+/*
+ * Procedure prenant en parametre un tableau de participants
+ * et qui affiche les attributs de ceux-ci.
+ */
 void affichVectParticipants (const vector<participant> & vPart){
     for (const participant & part : vPart){
         cout << part.nom << endl;
@@ -82,7 +101,7 @@ participant pileOuFace (const participant & p1, const participant & p2){
 }
 
 // Jeu 3: Nombre Secret (devine le nombre)
-participant NombreSecret (const participant & p1, const participant & p2){
+participant nombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
     max = 20;
@@ -95,8 +114,8 @@ participant NombreSecret (const participant & p1, const participant & p2){
         guess2= litUnEntier();
     }
     
-    if (guess1 == guess2){return (NombreSecret(p1, p2));}
-    
+    if (guess1 == guess2){return (nombreSecret(p1, p2));}
+
     else{
         if (guess1 == secret){return (p1);}
         return p2;
@@ -119,7 +138,7 @@ void jouerMatch (participant & p1, participant & p2){
         p2.score++;
 
     // Jeu 3: Nombre Secret
-    if (NombreSecret(p1, p2).nom == p1.nom)
+    if (nombreSecret(p1, p2).nom == p1.nom)
         p1.score++;
     else
         p2.score++;
