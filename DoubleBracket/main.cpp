@@ -52,6 +52,10 @@ bool compare2part (const participant & p1, const participant & p2){
     return p1.prenom < p2.prenom;
 }
 
+/**
+ * Procedure prenant en parametre un tableau de strings
+ * et qui affiche le contenu de celui-ci sur le terminal.
+ */
 void affichVectString (const vector<string> & v){
     for (const string & val : v)
         cout << val << '\t';
