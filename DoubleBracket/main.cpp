@@ -216,44 +216,50 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
         }
     }
 }
-
+/**
+* Fonction principale prenant en parametre les joueurs 
+* et qui execute les differentes procedures/fonctions ecrites ci dessus
+* en suivant donc un systeme de classement de Double Bracket
+* elle renvoie les 4 premiers du tournoi
+*/
 vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
     vector<participant> tableauGagnants = joueurs;
     vector<participant> tableauPerdants;
     participant troisieme;
     participant quatrieme;
 
-    while (tableauGagnants.size() > 1){
-        vector<participant> nouveauxGagnants;
-        vector<participant> nouveauxPerdants;
+    while (tableauGagnants.size() > 1){ // tant qu'il n'y a pas un finaliste
+        vector<participant> nouveauxGagnants; 
+        vector<participant> nouveauxPerdants; // creation de nouveaux vecteurs permettant de stocker les differents changements entre les deux tableaux
         // Matchs du winner bracket
+        // Cas du premier tour : le Loser Bracket est encore vide, les joueurs s'affrontent entre eux
         jouerMatchs(tableauGagnants, nouveauxGagnants, nouveauxPerdants);
         tableauGagnants = nouveauxGagnants;
 
-        vector<participant> survivants;
-        vector<participant> elimines;
+        vector<participant> survivants; // stocke les survivants
+        vector<participant> elimines;// recuperes les elimines
         if (tableauPerdants.empty()){
             jouerMatchs(nouveauxPerdants, survivants, elimines);
         }
         else {
-            while (tableauPerdants.size() > nouveauxPerdants.size()) {
+            while (tableauPerdants.size() > nouveauxPerdants.size()) { // si il y a plus de joueurs dans le Looser que dans le Winner
                 vector<participant> survivantsIntermediaires;
                 vector<participant> eliminesIntermediaires;
                 jouerMatchs(tableauPerdants, survivantsIntermediaires, eliminesIntermediaires);
-                if (tableauPerdants.size() == 2 && eliminesIntermediaires.size() == 1) {
+                if (tableauPerdants.size() == 2 && eliminesIntermediaires.size() == 1) { // prise en compte du quatrieme
                     quatrieme = eliminesIntermediaires[0];
                 }
                 tableauPerdants = survivantsIntermediaires;
                 
             }
-            if(tableauPerdants.size() < nouveauxPerdants.size()){
+            if(tableauPerdants.size() < nouveauxPerdants.size()){ 
                 cout << "Erreur: effectifs incorrects dans le Loser Bracket" << endl;
                 return {joueurs[0]};
             }
             if(tableauPerdants.size() == nouveauxPerdants.size()){
                 jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines);
             }
-            if (tableauPerdants.size() == 1 && elimines.size() == 1) {
+            if (tableauPerdants.size() == 1 && elimines.size() == 1) { // prise en compte du troisieme
                     troisieme = elimines[0];
                 }
         }
@@ -265,9 +271,9 @@ vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
     if(gagnant.nom == tableauPerdants[0].nom)
         gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
 
-    participant deuxieme = (gagnant.nom == tableauGagnants[0].nom) ? tableauPerdants[0] : tableauGagnants[0];
+    participant deuxieme = (gagnant.nom == tableauGagnants[0].nom) ? tableauPerdants[0] : tableauGagnants[0]; // en fonction du gagnant, on recupere donc le deuxieme
     
-    return {gagnant, deuxieme, troisieme, quatrieme}    ;
+    return {gagnant, deuxieme, troisieme, quatrieme}; // renvoie la liste des 4 premiers
 }
 
 const size_t KNbJoueurs (64); // On initialise le nombre de joueurs
