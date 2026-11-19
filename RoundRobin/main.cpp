@@ -94,8 +94,8 @@ void affichVectParticipants (const vector<participant> & vPart){
 }
 
 /** --- Jeu 1: PFC --- 
-* - Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
-* - pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
+* Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
+* pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
 */
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
@@ -115,9 +115,9 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
 }
 
 /** --- JEU 2: Pile ou Face ---
-* - Entrées joueurs: (0: pile, 1: face)
-* - Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
-* - La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
+* Entrées joueurs: (0: pile, 1: face)
+* Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
+* La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
 */
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
@@ -169,6 +169,12 @@ participant nombreSecret (const participant & p1, const participant & p2){
     }
 }
 
+/**
+* Fonction permettant de lancer l'affrontement de 2 joueurs pris en paramètre.
+* Execute les 2 premiers jeux
+* Si une victoire chacun a la fin des deux premiers jeux, on les fait jouer au troisieme
+* elle renvoie le gagnant de l'affrontement entre les deux joueurs 
+*/
 void jouerMatch (participant & p1, participant & p2){
     size_t v1 (0);
     size_t v2 (0);
