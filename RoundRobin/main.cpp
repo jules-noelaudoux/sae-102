@@ -55,7 +55,7 @@ int litUnEntier (){
 struct participant {
     string nom;
     string prenom;
-    unsigned score;
+    size_t score;
 };
 
 /**
@@ -168,8 +168,8 @@ participant nombreSecret (const participant & p1, const participant & p2){
 }
 
 void jouerMatch (participant & p1, participant & p2){
-    unsigned v1 (0);
-    unsigned v2 (0);
+    size_t v1 (0);
+    size_t v2 (0);
 
     // Jeu 1: PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom) {v1++;}
@@ -197,9 +197,9 @@ void jouerMatch (participant & p1, participant & p2){
 }
 
 vector<participant> lireParticipants (){
-    const unsigned KNbJoueurs (8);
+    const size_t KNbJoueurs (8);
     vector<participant> v;
-    for (unsigned i (0); i < KNbJoueurs; ++i){
+    for (size_t i (0); i < KNbJoueurs; ++i){
         string ligne = litUneString();
         if (ligne.size() >= 7 && ligne.substr(0, 7) == "Joueur:")
             ligne = ligne.substr(7);
@@ -215,22 +215,24 @@ vector<participant> lireParticipants (){
  * A la fin, le vecteur est trié pour obtenir le classement! final.
  */
 void tournoiRoundRobin (vector<participant> & vPart){
-    for (unsigned i=0; i < vPart.size(); i++){
-        for (unsigned j (i + 1); j < vPart.size(); j++){
+    for (size_t i=0; i < vPart.size(); ++i){
+        for (size_t j (i + 1); j < vPart.size(); ++j){
             jouerMatch(vPart[i], vPart[j]);
         }
     }
+    // Classement final: tri par score décroissant, puis par ordre alphabétique pour les scores égaux.
     sort(vPart.begin(), vPart.end(), compare2part);
 }
 
 int main (){
-    srand(47);
+    srand(47); // Graine fixe (arbitrairement 47): pour les tirages aléatoires (pile ou face et nombre secret)
 
     vector<participant> vParticipants = lireParticipants();
 
     tournoiRoundRobin(vParticipants);
 
-    for (unsigned i (0); i < vParticipants.size(); ++i){
+    // Affichage du classement comme "rang:nom"
+    for (size_t i (0); i < vParticipants.size(); ++i){
         cout << (i + 1) << ":" << vParticipants[i].nom << endl;
     }
 
