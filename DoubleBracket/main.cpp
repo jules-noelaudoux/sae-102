@@ -223,17 +223,21 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
 * elle renvoie les 4 premiers du tournoi
 */
 vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
+    // Initialisation du Winner Bracket avec tous les joueurs
     vector<participant> tableauGagnants = joueurs;
+    //Initialisation du Looser Bracket, qui est vide au départ
     vector<participant> tableauPerdants;
+    // Variables permettant de mémoriser les joueurs terminant à la 3e et 4e place
     participant troisieme;
     participant quatrieme;
 
+    // On continue les tours tant qu'il reste plusieurs joueurs dans le Winner Bracket
     while (tableauGagnants.size() > 1){ // tant qu'il n'y a pas un finaliste
         vector<participant> nouveauxGagnants; 
         vector<participant> nouveauxPerdants; // creation de nouveaux vecteurs permettant de stocker les differents changements entre les deux tableaux
         // Matchs du winner bracket
-        // Cas du premier tour : le Loser Bracket est encore vide, les joueurs s'affrontent entre eux
         jouerMatchs(tableauGagnants, nouveauxGagnants, nouveauxPerdants);
+        // Mise à jour du Winner Bracket avec les joueurs ayant remporté leur match
         tableauGagnants = nouveauxGagnants;
 
         vector<participant> survivants; // stocke les survivants
@@ -252,10 +256,14 @@ vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
                 tableauPerdants = survivantsIntermediaires;
                 
             }
+            // Vérification : le Loser Bracket ne doit pas contenir moins de joueurs
+            // que le nombre de joueurs qui viennent de descendre du Winner Bracket
             if(tableauPerdants.size() < nouveauxPerdants.size()){ 
                 cout << "Erreur: effectifs incorrects dans le Loser Bracket" << endl;
                 return {joueurs[0]};
             }
+            // Lorsque les deux tableaux contiennent le même nombre de joueurs,
+            // on organise des matchs croisés entre les joueurs des deux tableaux
             if(tableauPerdants.size() == nouveauxPerdants.size()){
                 jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines);
             }
