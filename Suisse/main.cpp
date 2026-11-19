@@ -115,7 +115,12 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-// Jeu 3: Nombre Secret (devine le nombre)
+/** --- JEU 3: Nombre Secret ---
+* (il départage les joueurs aprés qu'il y ait 1 partout).
+* Un nombre secret est tiré dans l'interval [min, max[
+* Les joueurs donne chacun un nombre à chaque tour, jusqu'à ce que l'un d'entre eux trouve le nombre secret
+* Si les deux le trouvent en même temps (au même tour), la manche est annulée et ils en rejouent une jusqu'à avoir un gagnant
+*/
 participant nombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
