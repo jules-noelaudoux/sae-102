@@ -177,9 +177,11 @@ void jouerMatchsCroises (const vector<participant> & anciens, const vector<parti
     }
 }
 
-participant tournoiDoubleBracket(vector<participant> & joueurs){ 
+vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
     vector<participant> tableauGagnants = joueurs;
     vector<participant> tableauPerdants;
+    participant troisieme;
+    participant quatrieme;
 
     while (tableauGagnants.size() > 1){
         vector<participant> nouveauxGagnants;
@@ -190,7 +192,6 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
 
         vector<participant> survivants;
         vector<participant> elimines;
-
         if (tableauPerdants.empty()){
             jouerMatchs(nouveauxPerdants, survivants, elimines);
         }
@@ -207,7 +208,7 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
             }
             if(tableauPerdants.size() < nouveauxPerdants.size()){
                 cout << "Erreur: effectifs incorrects dans le Loser Bracket" << endl;
-                return joueurs[0];
+                return {joueurs[0]};
             }
             if(tableauPerdants.size() == nouveauxPerdants.size()){
                 jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines);
@@ -226,7 +227,7 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
 
     participant deuxieme = (gagnant.nom == tableauGagnants[0].nom) ? tableauPerdants[0] : tableauGagnants[0];
     
-    return {gagnant, deuxieme, troisieme, quatrieme};
+    return {gagnant, deuxieme, troisieme, quatrieme}    ;
 }
 
 const unsigned KNbJoueurs (64); // On initialise le nombre de joueurs
