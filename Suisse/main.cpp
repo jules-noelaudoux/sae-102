@@ -54,8 +54,8 @@ bool compare2part (const participant & p1, const participant & p2){
 }
 
 /**
- * Procedure prenant en parametre un tableau de strings
- * et qui affiche le contenu de celui-ci sur le terminal.
+ * Procedure affichVectString()qui prend en parametre un tableau
+ * de strings et qui affiche le contenu de celui-ci sur le terminal.
  */
 void affichVectString (const vector<string> & v){
     for (const string & val : v)
@@ -76,8 +76,8 @@ void affichVectParticipants (const vector<participant> & vPart){
 }
 
 /** --- Jeu 1: PFC --- 
-* - Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
-* - pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
+* Entrées joueurs: (0: pierre, 1: feuille, 2: ciseaux)
+* pierre(0) bat ciseaux(2) ; feuille(1) bat pierre(0) ; ciseaux(2) bat feuille(1)
 */
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
@@ -97,9 +97,9 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
 }
 
 /** --- JEU 2: Pile ou Face ---
-* - Entrées joueurs: (0: pile, 1: face)
-* - Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
-* - La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
+* Entrées joueurs: (0: pile, 1: face)
+* Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue
+* La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
 */
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
@@ -186,22 +186,35 @@ vector<participant> lireParticipants (){
     return v;
 }
 
+/**
+ * Procedure tournoiSuisse() prenant un tableau de
+ * participants et renvoie si le participant 1
+ * a le meilleur score ou non.
+ * Si egalite alors on classe en fonction du nom
+ * par ordre alphabetique.
+ */
 void tournoiSuisse (vector<participant> & vPart){
-    const size_t KNbRondes (5);
-    vector<string> historique;
+    const size_t KNbRondes (5);  // Nombre de rondes
+    vector<string> historique;  // On initialise un tableau qui va stocker l'historique des matchs
 
-    for (size_t r (0); r < KNbRondes; ++r){
-        // on trie par score decroissant avant chaque ronde
+    for (size_t r (0); r < KNbRondes; ++r){  // On boucle sur le nombre de rondes
+        // On trie par score decroissant avant chaque ronde,
+        // on utilise le critere de classement donne par la
+        // fonction compare2part()
         sort(vPart.begin(), vPart.end(), compare2part);
 
+        // On initialise un tableau de booleens remplis de
+        // false de la taille du tableau vPart
         vector<bool> apparie(vPart.size(), false);
 
+        // On boucle sur les indices du tableau vPart
         for (size_t i (0); i < vPart.size(); ++i){
+            // On passe a l'iteration suivante si on trouve true
             if (apparie[i]) continue;
 
-            size_t adv = vPart.size();
+            size_t adv = vPart.size();  // On initialise un entier de la taille du tableau
             // on cherche le joueur le plus proche en score pas encore affronte
-            for (size_t j (i + 1); j < vPart.size(); ++j){
+            for (size_t j (i + 1); j < vPart.size(); ++j){  // On boucle sur les indics de la partie (i+1)
                 if (!apparie[j] && !ontDejaJoue(vPart[i].nom, vPart[j].nom, historique)){
                     adv = j;
                     break;
@@ -231,14 +244,17 @@ void tournoiSuisse (vector<participant> & vPart){
 }
 
 int main (){
-    srand(47);
+    srand(47);  // Initialisation d'une graine arbitraire
 
+    // Initialisation d'un tableau de participants lus dans le fichier entree
     vector<participant> vParticipants = lireParticipants();
 
+    // Triage du tableau vParticipants apres un tournoi Suisse par ordre decroissant du score
     tournoiSuisse(vParticipants);
 
-    for (size_t i (0); i < vParticipants.size(); ++i){
-        cout << (i + 1) << ":" << vParticipants[i].nom << endl;
+    // On affiche les participants dans l'ordre du classement.
+    for (size_t i (0); i < vParticipants.size(); ++i){  // On boucle sur les indices du tableau
+        cout << (i + 1) << ":" << vParticipants[i].nom << endl;  // Affichage sous la forme : "[place]:[nom]"
     }
 
     return 0;
