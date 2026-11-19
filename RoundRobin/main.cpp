@@ -213,9 +213,10 @@ void jouerMatch (participant & p1, participant & p2){
     }
     
 }
-
-// Lit les 8 participants depuis l'entrée (sous format "Joueur:Nom" ou "Nom").
-// Et leur score initialisé à 0
+/**
+* Lit les 8 participants depuis l'entrée (sous format "Joueur:Nom" ou "Nom").
+* Et leur score initialisé à 0
+*/
 vector<participant> lireParticipants (){
     const size_t KNbJoueurs (8);
     vector<participant> v;
