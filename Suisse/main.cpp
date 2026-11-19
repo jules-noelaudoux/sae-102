@@ -218,7 +218,7 @@ void tournoiSuisse (vector<participant> & vPart){
                     ++j;
                 }
 
-                // Si tous ont deja ete affrontes, on prend le premier disponible
+                // Si tous ont deja ete affrontes on prend le premier disponible
                 if (!trouve){
                     j = i + 1;
                     while (j < vPart.size() && !trouve){
@@ -230,6 +230,7 @@ void tournoiSuisse (vector<participant> & vPart){
                     }
                 }
 
+                // Si un adversaire a ete trouve on joue le match et on met a jour l'historique
                 if (trouve){
                     apparie[i] = true;
                     apparie[adv] = true;
