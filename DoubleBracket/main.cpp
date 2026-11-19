@@ -85,6 +85,12 @@ participant pierreFeuilleCiseau (const participant & p1, const participant & p2)
     }
     return p2; // on retourne le gagnant
 }
+
+/** --- JEU 2: Pile ou Face ---
+* - Entrées joueurs: (0: pile, 1: face)
+* - Les 2 joueurs doivent choisir des faces différentes, sinon on rejoue 
+* - La pièce est lancée (avec rand): celui qui a choisi le bon côté gagne
+*/
 participant pileOuFace (const participant & p1, const participant & p2){
     int choix1 = litUnEntier();
     int choix2 = litUnEntier();
