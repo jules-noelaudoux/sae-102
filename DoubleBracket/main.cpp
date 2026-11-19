@@ -64,7 +64,7 @@ void affichVectParticipants (const vector<participant> & vPart){
 
 // jeux 
 
-// 0: pierre, 1: feuille, 2: ciseaux
+// 0: pierre 1: feuille 2: ciseaux
 participant pierreFeuilleCiseau (const participant & p1, const participant & p2) {
     int coup1 = litUnEntier();
     int coup2 = litUnEntier();
@@ -95,7 +95,7 @@ participant pileOuFace (const participant & p1, const participant & p2){
     return p2;
 }
 
-// Jeu 3 : Nombre Secret (devine le nombre)
+// Jeu 3: Nombre Secret (devine le nombre)
 participant NombreSecret (const participant & p1, const participant & p2){
     int min, max, secret;
     min = 0;
@@ -117,24 +117,24 @@ participant NombreSecret (const participant & p1, const participant & p2){
     }
 }
 
-// Une manche en BO3 (2 victoires pour gagner le match)
+// Manche en BO3 (2 victoires pour gagner le match)
 participant jouerMatch (const participant & p1, const participant & p2){
     unsigned v1 (0);
     unsigned v2 (0);
 
-    // Jeu 1 : PFC
+    // Jeu 1: PFC
     if (pierreFeuilleCiseau(p1, p2).nom == p1.nom)
         v1++;
     else
         v2++;
 
-    // Jeu 2 : Pile ou Face
+    // Jeu 2: Pile ou Face
     if (pileOuFace(p1, p2).nom == p1.nom)
         v1++;
     else
         v2++;
 
-    // Jeu 3 : seulement si egalite
+    // Jeu 3: seulement si egalite
     if (v1 == 1 && v2 == 1){
         if (NombreSecret(p1, p2).nom == p1.nom)
             v1++;
@@ -185,7 +185,7 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
     while (tableauGagnants.size() > 1){
         vector<participant> nouveauxGagnants;
         vector<participant> nouveauxPerdants;
-        // Matchs du Winner Bracket
+        // Matchs du winner bracket
         jouerMatchs(tableauGagnants, nouveauxGagnants, nouveauxPerdants);
         tableauGagnants = nouveauxGagnants;
 
@@ -214,7 +214,7 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
     }
     // Grande finale
     participant gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
-    // Si le champion du Looser Bracket gagne, on rejoue une finale
+    // Si le champion du looser bracket gagne on rejoue une finale
     if(gagnant.nom == tableauPerdants[0].nom)
         gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
         
