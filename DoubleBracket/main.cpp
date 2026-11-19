@@ -272,6 +272,10 @@ vector<participant> tournoiDoubleBracket(vector<participant> & joueurs){
 
 const size_t KNbJoueurs (64); // On initialise le nombre de joueurs
 
+/**
+* Lit les 8 participants depuis l'entrée (sous format "Joueur:Nom" ou "Nom").
+* Et leur score initialisé à 0
+*/
 vector<participant> lireParticipants (){
     vector<participant> v;
     for (size_t i (0); i < KNbJoueurs; ++i){
@@ -285,9 +289,10 @@ vector<participant> lireParticipants (){
 
 int main()
 {
-    srand(47);
+    srand(47); // Graine fixe (arbitrairement 47) : pour les tirages aléatoires (pile ou face ou nombreSecret)
     vector<participant> joueurs = lireParticipants();
     vector<participant> top4 = tournoiDoubleBracket(joueurs);
+    // Affichage du classement des 4 premiers
     for (size_t i = 0; i < top4.size(); ++i) {
         cout << (i + 1) << ":" << top4[i].nom << endl;
     }
