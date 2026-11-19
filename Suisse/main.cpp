@@ -186,60 +186,61 @@ vector<participant> lireParticipants (){
     return v;
 }
 
-/**
- * Procedure tournoiSuisse() prenant un tableau de
- * participants et renvoie si le participant 1
- * a le meilleur score ou non.
- * Si egalite alors on classe en fonction du nom
- * par ordre alphabetique.
+/* Procedure tournoiSuisse() prenant un tableau de
+ * participants par reference, simule un tournoi suisse
+ * en 5 rondes et trie le tableau selon le classement final.
  */
 void tournoiSuisse (vector<participant> & vPart){
     const size_t KNbRondes (5);  // Nombre de rondes
-    vector<string> historique;  // On initialise un tableau qui va stocker l'historique des matchs
+    vector<string> historique;  // Historique des matchs deja joues
 
-    for (size_t r (0); r < KNbRondes; ++r){  // On boucle sur le nombre de rondes
+    for (size_t r (0); r < KNbRondes; ++r){
         // On trie par score decroissant avant chaque ronde,
         // on utilise le critere de classement donne par la
         // fonction compare2part()
         sort(vPart.begin(), vPart.end(), compare2part);
 
-        // On initialise un tableau de booleens remplis de
-        // false de la taille du tableau vPart
+        // Tableau indiquant si chaque participant a deja joue dans cette ronde
         vector<bool> apparie(vPart.size(), false);
 
-        // On boucle sur les indices du tableau vPart
         for (size_t i (0); i < vPart.size(); ++i){
-            // On passe a l'iteration suivante si on trouve true
-            if (apparie[i]) continue;
+            if (!apparie[i]){
+                bool trouve (false);
+                size_t adv (0);
+                size_t j (i + 1);
 
-            size_t adv = vPart.size();  // On initialise un entier de la taille du tableau
-            // on cherche le joueur le plus proche en score pas encore affronte
-            for (size_t j (i + 1); j < vPart.size(); ++j){  // On boucle sur les indics de la partie (i+1)
-                if (!apparie[j] && !ontDejaJoue(vPart[i].nom, vPart[j].nom, historique)){
-                    adv = j;
-                    break;
-                }
-            }
-            // sinon on prend le premier disponible
-            if (adv == vPart.size()){
-                for (size_t j (i + 1); j < vPart.size(); ++j){
-                    if (!apparie[j]){
+                // On cherche le premier adversaire disponible pas encore affronte
+                while (j < vPart.size() && !trouve){
+                    if (!apparie[j] && !ontDejaJoue(vPart[i].nom, vPart[j].nom, historique)){
                         adv = j;
-                        break;
+                        trouve = true;
+                    }
+                    ++j;
+                }
+
+                // Si tous ont deja ete affrontes, on prend le premier disponible
+                if (!trouve){
+                    j = i + 1;
+                    while (j < vPart.size() && !trouve){
+                        if (!apparie[j]){
+                            adv = j;
+                            trouve = true;
+                        }
+                        ++j;
                     }
                 }
-            }
 
-            if (adv < vPart.size()){
-                apparie[i] = true;
-                apparie[adv] = true;
-                jouerMatch(vPart[i], vPart[adv]);
-                historique.push_back(vPart[i].nom + "-" + vPart[adv].nom);
+                if (trouve){
+                    apparie[i] = true;
+                    apparie[adv] = true;
+                    jouerMatch(vPart[i], vPart[adv]);
+                    historique.push_back(vPart[i].nom + "-" + vPart[adv].nom);
+                }
             }
         }
     }
 
-    // classement final
+    // Classement final
     sort(vPart.begin(), vPart.end(), compare2part);
 }
 
@@ -249,11 +250,11 @@ int main (){
     // Initialisation d'un tableau de participants lus dans le fichier entree
     vector<participant> vParticipants = lireParticipants();
 
-    // Triage du tableau vParticipants apres un tournoi Suisse par ordre decroissant du score
+    // Deroulement du tournoi suisse et tri final des participants
     tournoiSuisse(vParticipants);
 
     // On affiche les participants dans l'ordre du classement.
-    for (size_t i (0); i < vParticipants.size(); ++i){  // On boucle sur les indices du tableau
+    for (size_t i (0); i < vParticipants.size(); ++i){
         cout << (i + 1) << ":" << vParticipants[i].nom << endl;  // Affichage sous la forme : "[place]:[nom]"
     }
 
