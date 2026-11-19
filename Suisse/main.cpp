@@ -6,6 +6,14 @@
 
 using namespace std;
 
+/**
+ * @brief litUneString
+ * @return la chaine lue sauf si :
+ * (1) on une boulette sur l'entrée
+ * (2) on trouve un commentaire sur l'entrée
+ * le commentaire est matérialisé par la chaine "//"
+ */
+
 string litUneString (){
     string uneChaine;
     while (true){
@@ -22,7 +30,7 @@ int litUnEntier (){
     return stoi(uneChaine);
 }
 
-/*
+/**
  * struct participant representant un participant
  * materialise avec son nom, son prenom et son score
  */
@@ -32,7 +40,7 @@ struct participant {
     unsigned score;
 };
 
-/*
+/**
  * Fonction compare2part() prenant en paramètres
  * deux participants et renvoie si le participant 1
  * a le meilleur score ou non.
@@ -45,7 +53,7 @@ bool compare2part (const participant & p1, const participant & p2){
     return p1.nom < p2.nom;  // gestion des egalites
 }
 
-/*
+/**
  * Procedure prenant en parametre un tableau de strings
  * et qui affiche le contenu de celui-ci sur le terminal.
  */
@@ -55,7 +63,7 @@ void affichVectString (const vector<string> & v){
     cout << endl;
 }
 
-/*
+/**
  * Procedure prenant en parametre un tableau de participants
  * et qui affiche les attributs de ceux-ci.
  */
