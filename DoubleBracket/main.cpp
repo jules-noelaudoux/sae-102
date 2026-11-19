@@ -199,7 +199,11 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
                 vector<participant> survivantsIntermediaires;
                 vector<participant> eliminesIntermediaires;
                 jouerMatchs(tableauPerdants, survivantsIntermediaires, eliminesIntermediaires);
+                if (tableauPerdants.size() == 2 && eliminesIntermediaires.size() == 1) {
+                    quatrieme = eliminesIntermediaires[0];
+                }
                 tableauPerdants = survivantsIntermediaires;
+                
             }
             if(tableauPerdants.size() < nouveauxPerdants.size()){
                 cout << "Erreur: effectifs incorrects dans le Loser Bracket" << endl;
@@ -208,17 +212,21 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
             if(tableauPerdants.size() == nouveauxPerdants.size()){
                 jouerMatchsCroises(tableauPerdants, nouveauxPerdants, survivants, elimines);
             }
+            if (tableauPerdants.size() == 1 && elimines.size() == 1) {
+                    troisieme = elimines[0];
+                }
         }
         tableauPerdants = survivants;
     }
-    // Grande finale
-    participant restant1 = tableauGagnants[0];
-    participant restant2 = tableauPerdants[0];
+    // Grande finale;
     participant gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
     // Si le champion du looser bracket gagne on rejoue une finale
     if(gagnant.nom == tableauPerdants[0].nom)
         gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
-    return gagnant;
+
+    participant deuxieme = (gagnant.nom == tableauGagnants[0].nom) ? tableauPerdants[0] : tableauGagnants[0];
+    
+    return {gagnant, deuxieme, troisieme, quatrieme};
 }
 
 const unsigned KNbJoueurs (64); // On initialise le nombre de joueurs
@@ -238,7 +246,9 @@ int main()
 {
     srand(47);
     vector<participant> joueurs = lireParticipants();
-    participant vainqueur = tournoiDoubleBracket(joueurs);
-    cout << "1:" << vainqueur.nom << endl;
+    vector<participant> top4 = tournoiDoubleBracket(joueurs);
+    for (unsigned i = 0; i < top4.size(); ++i) {
+        cout << (i + 1) << ":" << top4[i].nom << endl;
+    }
     return 0;
 }
