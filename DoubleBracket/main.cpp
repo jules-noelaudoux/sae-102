@@ -212,11 +212,12 @@ participant tournoiDoubleBracket(vector<participant> & joueurs){
         tableauPerdants = survivants;
     }
     // Grande finale
+    participant restant1 = tableauGagnants[0];
+    participant restant2 = tableauPerdants[0];
     participant gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
     // Si le champion du looser bracket gagne on rejoue une finale
     if(gagnant.nom == tableauPerdants[0].nom)
         gagnant = jouerMatch(tableauGagnants[0], tableauPerdants[0]);
-        
     return gagnant;
 }
 
