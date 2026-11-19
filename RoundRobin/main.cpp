@@ -208,6 +208,12 @@ vector<participant> lireParticipants (){
     return v;
 }
 
+/**
+ * Tournoi Round Robin: chaque participant affronte une seule fois chacun des autres
+ * La double boucle for (j commence à i+1) génère chaque paire (i, j) une seule fois
+ * soit n*(n-1)/2 matchs ( avec 8 joueurs ça nous fait 28 matchs).
+ * A la fin, le vecteur est trié pour obtenir le classement! final.
+ */
 void tournoiRoundRobin (vector<participant> & vPart){
     for (unsigned i=0; i < vPart.size(); i++){
         for (unsigned j (i + 1); j < vPart.size(); j++){
