@@ -208,11 +208,14 @@ void jouerMatch (participant & p1, participant & p2){
     
 }
 
+// Lit les 8 participants depuis l'entrée (sous format "Joueur:Nom" ou "Nom").
+// Et leur score initialisé à 0
 vector<participant> lireParticipants (){
     const size_t KNbJoueurs (8);
     vector<participant> v;
     for (size_t i (0); i < KNbJoueurs; ++i){
         string ligne = litUneString();
+        // Retire le début "Joueur:" (7 caractères) si il est présent
         if (ligne.size() >= 7 && ligne.substr(0, 7) == "Joueur:")
             ligne = ligne.substr(7);
         v.push_back(participant{ligne, "", 0});
