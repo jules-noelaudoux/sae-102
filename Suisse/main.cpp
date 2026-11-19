@@ -37,7 +37,7 @@ int litUnEntier (){
 struct participant {
     string nom;
     string prenom;
-    unsigned score;
+    size_t score;
 };
 
 /**
@@ -155,7 +155,7 @@ void jouerMatch (participant & p1, participant & p2){
 bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string> & historique){
     string match1 = nom1 + "-" + nom2;
     string match2 = nom2 + "-" + nom1;
-    for (unsigned i (0); i < historique.size(); ++i){
+    for (size_t i (0); i < historique.size(); ++i){
         if (historique[i] == match1 || historique[i] == match2)
             return true;
     }
@@ -163,9 +163,9 @@ bool ontDejaJoue (const string & nom1, const string & nom2, const vector<string>
 }
 
 vector<participant> lireParticipants (){
-    const unsigned KNbJoueurs (16); // On initialise le nombre de joueurs
+    const size_t KNbJoueurs (16); // On initialise le nombre de joueurs
     vector<participant> v;
-    for (unsigned i (0); i < KNbJoueurs; ++i){
+    for (size_t i (0); i < KNbJoueurs; ++i){
         string ligne = litUneString();
         if (ligne.size() >= 7 && ligne.substr(0, 7) == "Joueur:")
             ligne = ligne.substr(7);
@@ -175,21 +175,21 @@ vector<participant> lireParticipants (){
 }
 
 void tournoiSuisse (vector<participant> & vPart){
-    const unsigned KNbRondes (5);
+    const size_t KNbRondes (5);
     vector<string> historique;
 
-    for (unsigned r (0); r < KNbRondes; ++r){
+    for (size_t r (0); r < KNbRondes; ++r){
         // on trie par score decroissant avant chaque ronde
         sort(vPart.begin(), vPart.end(), compare2part);
 
         vector<bool> apparie(vPart.size(), false);
 
-        for (unsigned i (0); i < vPart.size(); ++i){
+        for (size_t i (0); i < vPart.size(); ++i){
             if (apparie[i]) continue;
 
-            unsigned adv = vPart.size();
+            size_t adv = vPart.size();
             // on cherche le joueur le plus proche en score pas encore affronte
-            for (unsigned j (i + 1); j < vPart.size(); ++j){
+            for (size_t j (i + 1); j < vPart.size(); ++j){
                 if (!apparie[j] && !ontDejaJoue(vPart[i].nom, vPart[j].nom, historique)){
                     adv = j;
                     break;
@@ -197,7 +197,7 @@ void tournoiSuisse (vector<participant> & vPart){
             }
             // sinon on prend le premier disponible
             if (adv == vPart.size()){
-                for (unsigned j (i + 1); j < vPart.size(); ++j){
+                for (size_t j (i + 1); j < vPart.size(); ++j){
                     if (!apparie[j]){
                         adv = j;
                         break;
@@ -225,7 +225,7 @@ int main (){
 
     tournoiSuisse(vParticipants);
 
-    for (unsigned i (0); i < vParticipants.size(); ++i){
+    for (size_t i (0); i < vParticipants.size(); ++i){
         cout << (i + 1) << ":" << vParticipants[i].nom << endl;
     }
 
