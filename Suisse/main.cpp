@@ -126,16 +126,22 @@ participant nombreSecret (const participant & p1, const participant & p2){
     min = 0;
     max = 20;
     secret = rand() % (max-min) + min;
+
+    // 1ere proposition de chaque joueur
     int guess1 = litUnEntier();
     int guess2= litUnEntier();
 
+    // Tant que personne n'a trouvé, on lit un nouveau tour de propositions.
     while (guess1 != secret && guess2 != secret){
         guess1 = litUnEntier();
         guess2= litUnEntier();
     }
-    
+
+    // ICI => au moins un joueur a trouvé le nombre secret
+    // Si guess1 == guess2, c'est que les deux ont trouvé en même temps: donc égalité => on rejoue
     if (guess1 == guess2){return (nombreSecret(p1, p2));}
 
+    // Sinon on retourne le gagnant:
     else{
         if (guess1 == secret){return (p1);}
         return p2;
