@@ -175,8 +175,10 @@ participant jouerMatch (const participant & p1, const participant & p2){
 }
 
 /**
-* Procedure prenant en parametre les joueurs en jeux, les joueurs dans le tableau des gagnants et ceus dans le tableau des perdants
+* Procedure prenant en parametre les joueurs en jeu, et leur positionnement dans le classement (tableau Winner ou Looser)
 * et qui repartie les differents joueurs en fonction de leurs résultats
+* elle permet notamment que lorsque la taille des deux tableaux (Winner/ Looser) est différente, de pouvoir réajuster les tailles 
+* en faisant un tour qu'avec les joueurs dans le tableau des perdants
 */
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
     for (size_t i = 0; i < joueurs.size(); i += 2){
@@ -192,6 +194,11 @@ void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gag
     }
 }
 
+/**
+* Procedure prenant en parametre les joueurs en jeu,et leur positionnement dans le classement (tableau Winner ou Looser)
+* et qui repartie les differents joueurs en fonction de leurs résultats
+* lorsque la taille du tableau des winners et égale à celle du tableau des Loosers
+*/
 void jouerMatchsCroises (const vector<participant> & anciens, const vector<participant> & nouveaux, vector<participant> & gagnants, vector<participant> & elimines){
     if (anciens.size() != nouveaux.size()) {
         cout << "Erreur : les deux tableaux n'ont pas la meme taille." << endl;
