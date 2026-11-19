@@ -141,7 +141,6 @@ participant nombreSecret (const participant & p1, const participant & p2){
 }
 
 /**
-* fonction permettant de jouer les differents jeux pour deux joueurs
 * Fonction prenant en parametre deux joueurs 
 * et qui execute les differents jeux pour ces deux joueurs
 * si egalite a la fin des deux premiers jeux, on en joue un troisieme
@@ -174,8 +173,10 @@ participant jouerMatch (const participant & p1, const participant & p2){
     if (v1 > v2) return p1;
     return p2;
 }
+
 /**
-* fonction permettant de définir les gagnants/perdants après un tour 
+* Procedure prenant en parametre les joueurs en jeux, les joueurs dans le tableau des gagnants et ceus dans le tableau des perdants
+* et qui repartie les differents joueurs en fonction de leurs résultats
 */
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
     for (size_t i = 0; i < joueurs.size(); i += 2){
