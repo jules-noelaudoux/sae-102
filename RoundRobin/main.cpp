@@ -158,11 +158,13 @@ participant nombreSecret (const participant & p1, const participant & p2){
 
     // ICI => au moins un joueur a trouvé le nombre secret
     // Si guess1 == guess2, c'est que les deux ont trouvé en même temps: donc égalité => on rejoue
-    if (guess1 == guess2){return (nombreSecret(p1, p2));}
+    if (guess1 == guess2)
+        return (nombreSecret(p1, p2));
 
     // Sinon on retourne le gagnant:
     else{
-        if (guess1 == secret){return (p1);}
+        if (guess1 == secret)
+            return (p1);
         return p2;
     }
 }
@@ -172,26 +174,36 @@ void jouerMatch (participant & p1, participant & p2){
     size_t v2 (0);
 
     // Jeu 1: PFC
-    if (pierreFeuilleCiseau(p1, p2).nom == p1.nom) {v1++;}
-    else {v2++;}
+    if (pierreFeuilleCiseau(p1, p2).nom == p1.nom) 
+        v1++;
+    else 
+        v2++;
 
     // Jeu 2: Pile ou Face
-    if (pileOuFace(p1, p2).nom == p1.nom) {v1++;}
-    else{v2++;}
+    if (pileOuFace(p1, p2).nom == p1.nom) 
+        v1++;
+    else 
+        v2++;
 
     // On fait jouer le 3eme jeu uniquement si aucun des deux joueurs n'a déjà gagné les 2 premiers.
     if (v1 == 1 && v2 == 1){
         // Jeu 3: Nombre Secret
-        if (nombreSecret(p1, p2).nom == p1.nom){v1++;}
-        else{v2++;}
+        if (nombreSecret(p1, p2).nom == p1.nom) 
+            v1++;
+        else 
+            v2++;
 
         // Le gagnant du match gagne 1 point au tournoi
-        if (v1 > v2){p1.score++;}
-        else{p2.score++;}
+        if (v1 > v2) 
+            p1.score++;
+        else 
+            p2.score++;
     }
     else{
-        if (v1 == 2){p1.score++;}
-        else{p2.score++;}
+        if (v1 == 2) 
+            p1.score++;
+        else 
+            p2.score++;
     }
     
 }
