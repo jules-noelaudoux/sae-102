@@ -1,4 +1,4 @@
-#Inscription des 16 joueurs du tournoi suisse:
+#Inscription des 16 joueurs du tournoi suisse (Test 1)
 Joueur:Alice
 Joueur:Bob
 Joueur:Chloe
@@ -17,491 +17,317 @@ Joueur:Oscar
 Joueur:Paul
 
 #Ronde 1/5
-#Match 1: Alice contre Bob
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 1: Alice contre Bob (2-1)
 Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
+Action:1
 Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:18
 Action:2
+Action:1
+Action:0
 Action:11
-Action:15
-
-#Match 2: Chloe contre David
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:16
+#Match 2: Chloe contre David (2-1)
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
 Action:0
 Action:13
-
-#Match 3: Emma contre Farid
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
 Action:11
-Action:15
+#Match 3: Emma contre Farid (0-3)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:8
+Action:1
+Action:14
 Action:4
-Action:8
-
-#Match 4: Gaelle contre Hugo
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 4: Gaelle contre Hugo (2-1)
 Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
+Action:0
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:3
+Action:11
 Action:16
-
-#Match 5: Ines contre Jules
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:12
-Action:16
-Action:5
-Action:9
-
-#Match 6: Karim contre Lea
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 5: Ines contre Jules (2-1)
 Action:2
+Action:1
 Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:8
-Action:1
-
-#Match 7: Maxime contre Nina
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:8
-Action:12
 Action:1
 Action:5
-
-#Match 8: Oscar contre Paul
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:18
+#Match 6: Karim contre Lea (0-3)
+Action:2
+Action:0
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
+Action:11
+Action:1
+#Match 7: Maxime contre Nina (1-2)
+Action:1
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:6
+Action:0
+Action:15
+Action:1
+#Match 8: Oscar contre Paul (2-1)
+Action:2
+Action:1
+Action:0
+Action:1
 Action:19
-
+Action:18
 
 #Ronde 2/5
-#Match 9: David contre Lea
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
+#Match 9: Farid contre Lea (1-2)
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:9
-Action:13
-Action:2
-Action:6
-
-#Match 10: Paul contre Alice
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
 Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:15
-Action:8
-
-#Match 11: Emma contre Hugo
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:4
-Action:8
-Action:17
-Action:1
-
-#Match 12: Jules contre Maxime
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:19
-Action:12
-
-#Match 13: Bob contre Farid
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:14
-Action:18
-Action:7
-Action:11
-
-#Match 14: Gaelle contre Ines
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:8
-Action:1
-
-#Match 15: Nina contre Chloe
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:7
-Action:11
-Action:0
-Action:4
-
-#Match 16: Karim contre Oscar
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:17
 Action:10
-
+Action:2
+#Match 10: Alice contre Chloe (0-3)
+Action:1
+Action:2
+Action:1
+Action:0
+Action:2
+Action:8
+#Match 11: Gaelle contre Ines (2-1)
+Action:1
+Action:2
+Action:0
+Action:1
+Action:15
+Action:4
+Action:17
+Action:19
+#Match 12: Nina contre Oscar (2-1)
+Action:2
+Action:0
+Action:0
+Action:1
+Action:12
+Action:8
+#Match 13: Bob contre David (1-2)
+Action:2
+Action:1
+Action:0
+Action:1
+Action:18
+Action:16
+Action:2
+Action:7
+#Match 14: Hugo contre Jules (1-2)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:1
+Action:11
+#Match 15: Maxime contre Paul (1-2)
+Action:1
+Action:0
+Action:1
+Action:0
+Action:3
+Action:0
+#Match 16: Emma contre Karim (2-1)
+Action:0
+Action:1
+Action:1
+Action:1
+Action:1
+Action:0
+Action:10
+Action:16
 
 #Ronde 3/5
-#Match 17: Lea contre Alice
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:13
-Action:17
-Action:6
-Action:10
-
-#Match 18: David contre Emma
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:13
-Action:6
-
-#Match 19: Maxime contre Paul
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 17: Chloe contre Lea (2-1)
 Action:1
 Action:2
-#Pile ou Face (0: pile, 1: face)
+Action:1
+Action:0
+Action:6
+Action:7
+#Match 18: Farid contre Gaelle (0-3)
+Action:2
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:5
-Action:9
+Action:0
+Action:19
+Action:6
+#Match 19: Nina contre David (3-0)
+Action:2
+Action:1
+Action:0
+Action:1
 Action:18
 Action:2
-
-#Match 20: Farid contre Hugo
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 20: Ines contre Oscar (2-1)
+Action:2
+Action:1
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:4
+Action:9
 Action:17
-
-#Match 21: Ines contre Nina
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 21: Jules contre Paul (1-2)
+Action:0
 Action:2
 Action:0
-#Pile ou Face (0: pile, 1: face)
+Action:1
+Action:16
+Action:0
+Action:14
+Action:1
+#Match 22: Alice contre Emma (0-3)
+Action:1
+Action:1
+Action:1
+Action:2
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
+Action:18
+Action:9
+#Match 23: Bob contre Hugo (1-2)
+Action:0
+Action:2
+Action:1
+Action:0
+Action:6
+Action:1
 Action:8
 Action:12
-Action:1
-Action:5
-
-#Match 22: Jules contre Oscar
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
+#Match 24: Maxime contre Karim (2-1)
+Action:0
 Action:2
-#Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:16
 Action:9
-
-#Match 23: Bob contre Gaelle
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:19
-Action:3
 Action:12
-Action:16
-
-#Match 24: Chloe contre Karim
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:16
-Action:9
-
 
 #Ronde 4/5
-#Match 25: Alice contre Emma
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
+#Match 25: Chloe contre Gaelle (2-1)
+Action:0
 Action:2
-#Pile ou Face (0: pile, 1: face)
-Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:14
-Action:18
-Action:7
-Action:11
-
-#Match 26: Lea contre Maxime
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:12
 Action:5
-
-#Match 27: Oscar contre David
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
 Action:7
-Action:11
-Action:0
-Action:4
-
-#Match 28: Hugo contre Nina
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
+#Match 26: Nina contre Lea (1-2)
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:6
+Action:1
+Action:0
+Action:15
+Action:14
+Action:5
+Action:10
+#Match 27: Emma contre Ines (1-2)
+Action:0
+Action:1
+Action:0
+Action:1
+Action:13
+Action:0
+#Match 28: Paul contre Farid (2-1)
+Action:1
+Action:1
+Action:1
+Action:0
+Action:1
+Action:1
+Action:0
+Action:1
 Action:19
-
-#Match 29: Paul contre Bob
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:2
+#Match 29: Hugo contre Maxime (2-1)
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:12
-Action:16
+Action:0
 Action:5
 Action:9
-
-#Match 30: Farid contre Ines
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 30: Jules contre Oscar (2-1)
+Action:0
 Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:15
+Action:0
 Action:8
-
-#Match 31: Gaelle contre Jules
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
+Action:7
+#Match 31: Bob contre Karim (1-2)
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:2
-Action:6
+Action:1
+Action:0
+Action:4
+Action:1
 Action:15
-Action:19
-
-#Match 32: Karim contre Chloe
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:7
+#Match 32: David contre Alice (2-1)
+Action:1
+Action:0
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
+Action:18
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:8
-Action:1
-
 
 #Ronde 5/5
-#Match 33: Emma contre Maxime
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 33: Chloe contre Nina (1-2)
+Action:0
+Action:0
 Action:2
 Action:0
-#Pile ou Face (0: pile, 1: face)
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:13
-Action:17
+Action:4
 Action:6
-Action:10
-
-#Match 34: Nina contre Oscar
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 34: Gaelle contre Lea (1-2)
+Action:2
+Action:1
+Action:0
 Action:1
 Action:2
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:11
 Action:4
-
-#Match 35: Alice contre David
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+#Match 35: Ines contre Paul (2-1)
+Action:0
+Action:2
 Action:0
 Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:0
-Action:4
 Action:13
-Action:17
-
-#Match 36: Lea contre Bob
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
 Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
+#Match 36: Emma contre Hugo (1-2)
+Action:1
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
-Action:19
-Action:12
-
-#Match 37: Ines contre Paul
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:1
-Action:2
-#Pile ou Face (0: pile, 1: face)
 Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:0
-Action:4
-Action:13
-Action:17
-
-#Match 38: Farid contre Gaelle
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:0
-Action:1
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
-Action:8
-Action:1
-
-#Match 39: Hugo contre Jules
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
-Action:2
-Action:0
-#Pile ou Face (0: pile, 1: face)
-Action:0
-Action:1
-#Nombre Secret (entre 0 et 19)
 Action:18
+Action:12
+#Match 37: Jules contre David (2-1)
+Action:0
 Action:2
-Action:11
-Action:15
-
-#Match 40: Karim contre Chloe
-#Pierre Feuille Ciseaux (0: pierre, 1: feuille, 2: ciseaux)
+Action:1
+Action:0
+Action:10
+Action:13
+#Match 38: Farid contre Maxime (1-2)
 Action:1
 Action:2
-#Pile ou Face (0: pile, 1: face)
+Action:1
 Action:0
 Action:1
-#Nombre Secret (entre 0 et 19)
+Action:19
+#Match 39: Oscar contre Bob (2-1)
+Action:1
+Action:0
+Action:0
+Action:1
 Action:11
+Action:14
+#Match 40: Karim contre Alice (1-2)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:10
 Action:4
-

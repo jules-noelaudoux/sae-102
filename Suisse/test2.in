@@ -1,4 +1,4 @@
-#Tournoi suisse (16 autres joueurs) -> Test 2
+#Tournoi suisse (16 joueurs) -> Test 2
 Joueur:Arthur
 Joueur:Bastien
 Joueur:Camille
@@ -16,478 +16,304 @@ Joueur:Pierre
 Joueur:Quentin
 Joueur:Romane
 
-
 #Ronde 1/5
-#Match 1: Arthur vs Bastien
-#Jeu 1: PFC
+#Match 1: Arthur vs Bastien (1-2)
 Action:2
-Action:1
-#Jeu 2: Pile ou Face
+Action:0
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
 Action:11
-Action:15
-
-#Match 2: Camille vs Dylan
-#Jeu 1: PFC
+Action:10
+#Match 2: Camille vs Dylan (2-1)
 Action:0
-Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:17
-Action:2
-Action:7
 Action:13
-
-#Match 3: Eva vs Florian
-#Jeu 1: PFC
-Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:4
-Action:8
-
-#Match 4: Gabriel vs Helene
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:16
-Action:0
-
-#Match 5: Iris vs Lucas
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:9
-Action:14
-Action:19
-Action:5
-
-#Match 6: Manon vs Nathan
-#Jeu 1: PFC
-Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:1
-Action:5
-
-#Match 7: Olivia vs Pierre
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:1
-Action:5
-
-#Match 8: Quentin vs Romane
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
 Action:3
-Action:8
-Action:13
+#Match 3: Eva vs Florian (3-0)
+Action:0
+Action:2
+Action:0
+Action:1
+Action:4
+Action:18
+#Match 4: Gabriel vs Helene (1-2)
+Action:1
+Action:2
+Action:1
+Action:0
+Action:16
+Action:14
+#Match 5: Iris vs Lucas (1-2)
+Action:0
+Action:2
+Action:0
+Action:1
+Action:0
+Action:5
+#Match 6: Manon vs Nathan (0-3)
+Action:0
+Action:1
+Action:0
+Action:1
+Action:11
+Action:1
+#Match 7: Olivia vs Pierre (1-2)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:1
+Action:9
+#Match 8: Quentin vs Romane (0-3)
+Action:2
+Action:0
+Action:0
+Action:1
+Action:3
 Action:19
-
 
 #Ronde 2/5
-#Match 9: Manon vs Arthur
-#Jeu 1: PFC
+#Match 9: Eva vs Nathan (2-1)
+Action:0
+Action:1
 Action:1
 Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
 Action:2
-Action:6
-
-#Match 10: Camille vs Eva
-#Jeu 1: PFC
+Action:8
+#Match 10: Romane vs Bastien (2-1)
+Action:0
 Action:2
 Action:1
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
+Action:10
+Action:3
 Action:8
 Action:12
-
-#Match 11: Gabriel vs Iris
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
+#Match 11: Camille vs Helene (0-3)
 Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:1
-Action:6
-Action:11
-Action:17
-
-#Match 12: Olivia vs Quentin
-#Jeu 1: PFC
-Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:12
-Action:16
-
-#Match 13: Bastien vs Dylan
-#Jeu 1: PFC
 Action:2
 Action:1
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
 Action:7
-Action:11
-
-#Match 14: Florian vs Helene
-#Jeu 1: PFC
+Action:17
+#Match 12: Lucas vs Pierre (1-2)
 Action:0
 Action:2
-#Jeu 2: Pile ou Face
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:5
-Action:10
+Action:6
+Action:12
+#Match 13: Arthur vs Dylan (2-1)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:7
+Action:6
+#Match 14: Gabriel vs Iris (1-2)
+Action:2
+Action:0
+Action:1
+Action:0
+Action:1
+Action:8
+#Match 15: Olivia vs Florian (3-0)
+Action:2
+Action:1
+Action:0
+Action:1
+Action:0
 Action:15
-Action:1
-
-#Match 15: Lucas vs Pierre
-#Jeu 1: PFC
-Action:1
+#Match 16: Manon vs Quentin (2-1)
 Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:0
-Action:4
-
-#Match 16: Romane vs Nathan
-#Jeu 1: PFC
 Action:2
 Action:1
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
+Action:2
 Action:10
-Action:14
-
 
 #Ronde 3/5
-#Match 17: Manon vs Bastien
-#Jeu 1: PFC
-Action:0
+#Match 17: Eva vs Helene (0-3)
 Action:2
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:10
-Action:15
 Action:0
-Action:6
-
-#Match 18: Camille vs Iris
-#Jeu 1: PFC
 Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:6
-Action:10
-
-#Match 19: Olivia vs Romane
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:18
-Action:2
-
-#Match 20: Eva vs Gabriel
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:1
-Action:6
 Action:11
-Action:17
-
-#Match 21: Helene vs Lucas
-#Jeu 1: PFC
-Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:1
-Action:5
-
-#Match 22: Quentin vs Arthur
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:9
-Action:13
-
-#Match 23: Florian vs Pierre
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:16
-Action:1
+Action:7
+Action:15
 Action:6
+#Match 18: Romane vs Nathan (1-2)
+Action:2
+Action:0
+Action:1
+Action:0
+Action:6
+Action:15
+#Match 19: Olivia vs Arthur (1-2)
+Action:0
+Action:1
+Action:0
+Action:1
 Action:12
-
-#Match 24: Dylan vs Nathan
-#Jeu 1: PFC
+Action:18
+#Match 20: Pierre vs Bastien (2-1)
+Action:0
+Action:2
 Action:1
 Action:0
-#Jeu 2: Pile ou Face
+Action:17
+Action:10
+#Match 21: Iris vs Camille (2-1)
+Action:0
+Action:2
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
 Action:9
+Action:1
+#Match 22: Lucas vs Dylan (2-1)
+Action:1
+Action:1
+Action:2
+Action:1
+Action:1
+Action:0
+Action:19
+Action:9
+#Match 23: Gabriel vs Manon (1-2)
+Action:2
+Action:0
+Action:0
+Action:1
+Action:15
 Action:13
-
+Action:14
+Action:12
+#Match 24: Quentin vs Florian (2-1)
+Action:2
+Action:1
+Action:1
+Action:0
+Action:16
+Action:9
 
 #Ronde 4/5
-#Match 25: Manon vs Camille
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:7
-Action:11
-
-#Match 26: Helene vs Olivia
-#Jeu 1: PFC
+#Match 25: Helene vs Nathan (2-1)
 Action:0
 Action:2
-#Jeu 2: Pile ou Face
 Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:9
-Action:14
-Action:19
-Action:5
-
-#Match 27: Quentin vs Bastien
-#Jeu 1: PFC
-Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
 Action:0
 Action:4
-
-#Match 28: Gabriel vs Romane
-#Jeu 1: PFC
+Action:7
+#Match 26: Pierre vs Romane (2-1)
 Action:2
 Action:1
-#Jeu 2: Pile ou Face
+Action:0
+Action:1
+Action:8
+Action:5
+#Match 27: Arthur vs Eva (2-1)
+Action:0
+Action:2
+Action:0
+Action:1
+Action:3
+Action:0
+#Match 28: Iris vs Olivia (2-1)
+Action:1
+Action:2
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
 Action:19
 Action:3
-
-#Match 29: Iris vs Dylan
-#Jeu 1: PFC
-Action:0
+#Match 29: Lucas vs Bastien (2-1)
+Action:1
+Action:1
 Action:2
-#Jeu 2: Pile ou Face
+Action:1
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:9
-Action:14
-Action:19
+Action:16
 Action:5
-
-#Match 30: Eva vs Pierre
-#Jeu 1: PFC
+#Match 30: Manon vs Camille (1-2)
+Action:2
+Action:0
 Action:1
 Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
 Action:8
-Action:12
-
-#Match 31: Florian vs Lucas
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:15
-Action:19
-
-#Match 32: Arthur vs Nathan
-#Jeu 1: PFC
+Action:11
+#Match 31: Dylan vs Gabriel (2-1)
 Action:0
 Action:2
-#Jeu 2: Pile ou Face
+Action:0
+Action:1
+Action:7
+Action:15
+#Match 32: Quentin vs Florian (2-1)
+Action:0
+Action:2
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:5
-Action:10
-Action:15
 Action:1
-
+Action:13
 
 #Ronde 5/5
-#Match 33: Manon vs Gabriel
-#Jeu 1: PFC
-Action:1
+#Match 33: Helene vs Pierre (2-1)
+Action:2
 Action:0
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
+Action:1
 Action:6
-Action:10
-
-#Match 34: Olivia vs Iris
-#Jeu 1: PFC
-Action:2
-Action:1
-#Jeu 2: Pile ou Face
+Action:0
+#Match 34: Arthur vs Iris (2-1)
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
+Action:0
+Action:1
 Action:4
-Action:8
-
-#Match 35: Quentin vs Helene
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:17
-Action:2
 Action:7
+#Match 35: Lucas vs Nathan (2-1)
+Action:0
+Action:1
+Action:1
+Action:0
 Action:13
-
-#Match 36: Bastien vs Camille
-#Jeu 1: PFC
 Action:1
-Action:0
-#Jeu 2: Pile ou Face
-Action:1
-Action:0
-#Jeu 3: Nombre Secret
-Action:12
-Action:16
-
-#Match 37: Eva vs Dylan
-#Jeu 1: PFC
+#Match 36: Romane vs Eva (1-2)
 Action:2
-Action:1
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:13
-Action:17
-
-#Match 38: Florian vs Romane
-#Jeu 1: PFC
-Action:0
-Action:2
-#Jeu 2: Pile ou Face
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:5
+Action:14
 Action:10
+Action:12
 Action:15
-Action:1
-
-#Match 39: Pierre vs Arthur
-#Jeu 1: PFC
-Action:1
+#Match 37: Olivia vs Bastien (0-3)
+Action:2
 Action:0
-#Jeu 2: Pile ou Face
-Action:1
 Action:0
-#Jeu 3: Nombre Secret
-Action:11
-Action:15
-
-#Match 40: Lucas vs Nathan
-#Jeu 1: PFC
+Action:1
+Action:2
+Action:13
+#Match 38: Camille vs Quentin (1-2)
 Action:2
 Action:1
-#Jeu 2: Pile ou Face
 Action:1
 Action:0
-#Jeu 3: Nombre Secret
+Action:11
+Action:1
+#Match 39: Dylan vs Manon (2-1)
+Action:2
+Action:1
+Action:0
+Action:1
+Action:11
+Action:3
+#Match 40: Gabriel vs Florian (1-2)
+Action:0
+Action:1
+Action:1
+Action:0
+Action:12
 Action:4
-Action:8
