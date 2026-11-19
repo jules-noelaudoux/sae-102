@@ -140,7 +140,13 @@ participant nombreSecret (const participant & p1, const participant & p2){
     }
 }
 
-// Manche en BO3 (2 victoires pour gagner le match)
+/**
+* fonction permettant de jouer les differents jeux pour deux joueurs
+* Fonction prenant en parametre deux joueurs 
+* et qui execute les differents jeux pour ces deux joueurs
+* si egalite a la fin des deux premiers jeux, on en joue un troisieme
+* elle renvoie le gagnant entre les deux joueurs 
+*/
 participant jouerMatch (const participant & p1, const participant & p2){
     size_t v1 (0);
     size_t v2 (0);
@@ -168,7 +174,9 @@ participant jouerMatch (const participant & p1, const participant & p2){
     if (v1 > v2) return p1;
     return p2;
 }
-
+/**
+* fonction permettant de définir les gagnants/perdants après un tour 
+*/
 void jouerMatchs (const vector<participant> & joueurs, vector<participant> & gagnants, vector<participant> & perdants){
     for (size_t i = 0; i < joueurs.size(); i += 2){
         participant gagnant = jouerMatch(joueurs[i], joueurs[i+1]);
